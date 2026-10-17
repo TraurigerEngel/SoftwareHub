@@ -4,7 +4,7 @@
 
 **Software Hub** — каталог программ и полезных сайтов с поиском, фильтрацией, ссылками на официальные источники и проверкой доступных версий. Современный интерфейс *Cinema Mono* с фиолетово-розовыми акцентами, живыми частицами и собственной строкой заголовка.
 
-[**Скачать Portable**](https://github.com/TraurigerEngel/SoftwareHub/releases) · [Описание v0.7.3](RELEASE_NOTES_RU.md) · [Безопасность данных](GITHUB_PRIVACY_RU.md) · [Проверки перед выпуском](RELEASE_CHECKLIST_RU.md)
+[**Скачать Portable v0.7.3**](https://github.com/TraurigerEngel/SoftwareHub/releases/tag/v0.7.3) · [Описание v0.7.3](RELEASE_NOTES_RU.md) · [Безопасность данных](GITHUB_PRIVACY_RU.md) · [Проверки перед выпуском](RELEASE_CHECKLIST_RU.md)
 
 ## Возможности
 
@@ -18,10 +18,12 @@
 
 ## Установка (Windows 11)
 
-1. Откройте [GitHub Releases](https://github.com/TraurigerEngel/SoftwareHub/releases).
-2. После публикации скачайте **`Software_Hub_v0.7.3_Stable_Portable.zip`** в разделе **Assets**.
+1. Откройте [релиз v0.7.3 Stable](https://github.com/TraurigerEngel/SoftwareHub/releases/tag/v0.7.3).
+2. Скачайте **`Software_Hub_v0.7.3_Stable_Portable.zip`** в разделе **Assets**.
 3. Распакуйте архив, сохранив структуру папок.
 4. Запустите **`SoftwareHub.exe`** рядом с каталогом `portable-data`.
+
+**Проверка Windows:** пользователь подтвердил, что Clean Portable успешно запускается и работает на Windows 11. Исходный EXE не пересобирался.
 
 Установщик не нужен. Для работы необходим **Microsoft WebView2 Runtime**. **Не удаляйте `portable-data`** после настройки приложения: в ней могут храниться ваши настройки и кэш.
 
