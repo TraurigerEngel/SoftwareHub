@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru" data-startup="loading">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' ipc: http://ipc.localhost; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-src 'none';">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#120a1b">
+  <title>Software Hub</title>
+  <link rel="stylesheet" href="./fonts/wght.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./visual-preview-10.css">
+  <link rel="stylesheet" href="./visual-preview-11.css">
+  <link rel="stylesheet" href="./visual-preview-12.css">
+  <link rel="stylesheet" href="./splash-stable-073.css">
+  <link rel="icon" type="image/png" href="./brand-icon.png">
+</head>
+<body>
+  <div class="window-titlebar" data-tauri-drag-region>
+    <div class="window-titlebar-spacer" data-tauri-drag-region aria-hidden="true"></div>
+    <div class="window-titlebar-title" data-tauri-drag-region>Software Hub</div>
+    <div class="window-controls">
+      <button type="button" id="windowMinimize" aria-label="Свернуть" title="Свернуть">
+        <svg class="window-control-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10"/></svg>
+      </button>
+      <button type="button" id="windowClose" aria-label="Закрыть" title="Закрыть">
+        <svg class="window-control-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="loading-overlay hidden" id="loadingOverlay" role="status" aria-live="polite" aria-busy="true">
+    <div class="loading-panel">
+      <div class="loading-spinner" aria-hidden="true"></div>
+      <div class="loading-title" id="loadingTitle">Обновление онлайн-версий</div>
+      <div class="loading-detail" id="loadingDetail">Получаем данные из интернета…</div>
+      <div class="loading-progress" aria-hidden="true">
+        <div class="loading-progress-bar" id="loadingProgressBar"></div>
+      </div>
+      <div class="loading-count" id="loadingCount">Пожалуйста, подождите…</div>
+    </div>
+  </div>
+
+  <!-- Static, non-animated first paint: never expose a partly initialized catalog. -->
+  <div class="startup-screen" id="startupScreen" role="status" aria-live="polite">
+    <div class="startup-panel">
+      <span class="startup-mark" aria-hidden="true"></span>
+      <div class="startup-name">Software Hub</div>
+      <div class="startup-status" id="startupStatus">Подготавливаем каталог…</div>
+      <div class="startup-progress-track" aria-hidden="true"><span class="startup-progress-fill"></span></div>
+      <button type="button" id="startupRetry" class="button hidden">Повторить загрузку</button>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <!-- Passive Kinoteka-inspired starfield: stays behind the catalog. -->
+    <canvas id="shubParticleField" class="shub-particle-field" aria-hidden="true"></canvas>
+    <!-- One compact control row; the application name lives in the centered native titlebar. -->
+    <header class="topbar">
+      <div class="toolbar">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Поиск программ и сайтов…" autocomplete="off">
+        </label>
+        <div id="programFilterWrap" class="program-filter-wrap">
+          <button id="programFilterBtn" class="button filter-button" type="button" aria-haspopup="dialog" aria-expanded="false">
+            <span class="filter-button-dot" aria-hidden="true"></span>
+            <span id="programFilterLabel">Категории</span>
+          </button>
+          <div id="programFilterPopover" class="program-filter-popover hidden" role="dialog" aria-label="Фильтр категорий каталога">
+            <div class="program-filter-head">
+              <div class="program-filter-heading">
+                <div id="programFilterTitle" class="program-filter-title">Категории каталога</div>
+                <div id="programFilterSummary" class="program-filter-summary">Все категории каталога</div>
+              </div>
+              <button id="programFilterClose" class="program-filter-close" type="button" aria-label="Закрыть фильтр">×</button>
+            </div>
+            <label class="filter-search-box">
+              <span>⌕</span>
+              <input id="programFilterSearch" type="search" placeholder="Поиск категорий…" autocomplete="off">
+            </label>
+            <div id="programFilterOptions" class="program-filter-options"></div>
+          </div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div id="stats" class="stats" aria-live="polite">Загрузка…</div>
+        <button id="refreshBtn" class="button button-primary refresh-button">↻ Обновить версии</button>
+      </div>
+    </header>
+
+    <main id="grid" class="grid" aria-live="polite"></main>
+    <div id="pagination" class="pagination hidden" aria-label="Страницы каталога"></div>
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  </div>
+  <script src="./bridge.js"></script>
+  <script src="./renderer.js"></script>
+  <script src="./particles.js"></script>
+</body>
+</html>

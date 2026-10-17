@@ -1,0 +1,14 @@
+/* Visual Preview 11 — new Software Hub application icon.
+   Extend Visual Preview 10 without changing its timings or motion rules. */
+.startup-mark {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 18px;
+  border: 0;
+  border-radius: 0;
+  background: url("./brand-icon.png") center / contain no-repeat;
+  box-shadow: none;
+  transform: none;
+}
+.startup-mark::before,
+.startup-mark::after { content: none; }

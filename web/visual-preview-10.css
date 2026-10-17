@@ -1,0 +1,200 @@
+/* Software Hub visual preview: loaded after the frozen v0.7.1 Stable theme. */
+/* Visual Preview 10 — Kinoteka/Igroteka family polish, built on v0.7.1 Stable.
+   Scope: static atmosphere, splash detail, crisp titlebar icons and user-driven
+   navigation motion. The 1.73s two-phase reveal, Rust IPC, 123-card catalog,
+   fixed 5-column desktop grid, native window settings and Kinoteka particles
+   are deliberately preserved. No external assets or per-card blur. */
+
+/* Ambient colour sits UNDER the existing particle field, with a true-black
+   center that keeps the translucent cards readable. Gradients are static and
+   create no continuous compositor workload. */
+.app-shell {
+  background:
+    radial-gradient(ellipse 37% 47% at 1% 39%, rgba(112, 56, 152, .095) 0%, transparent 92%),
+    radial-gradient(ellipse 34% 43% at 101% 70%, rgba(164, 64, 114, .074) 0%, transparent 94%),
+    radial-gradient(ellipse 34% 29% at 50% -12%, rgba(191, 142, 75, .065) 0%, transparent 91%),
+    #020203 !important;
+}
+
+/* Static titlebar: no flash or entrance effect while WebView2 is loading. */
+.window-titlebar {
+  background: #060608;
+  border-bottom-color: rgba(245, 219, 174, .11);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .025) inset;
+  transition: none;
+}
+.window-titlebar::after {
+  content: '';
+  position: absolute;
+  left: 27%;
+  right: 27%;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(222,176,106,.18), transparent);
+  pointer-events: none;
+}
+.window-titlebar-title {
+  color: #f2ede7;
+  letter-spacing: .018em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .25);
+}
+.window-control-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.window-controls button {
+  display: grid;
+  place-items: center;
+  color: #c8c4c3;
+}
+.window-controls button:focus-visible {
+  outline: 1px solid rgba(231,197,142,.67);
+  outline-offset: -3px;
+}
+.window-controls #windowMinimize:hover,
+.window-controls #windowMinimize:focus-visible {
+  background: rgba(222,176,106,.105);
+  color: #f2d9b1;
+}
+.window-inactive .window-titlebar {
+  background: #050506;
+}
+
+/* The start screen is fully painted in the first frame, before catalog work.
+   Its existing parent/label opacity transitions remain unchanged, ensuring
+   the title disappears BEFORE cards are exposed. */
+.startup-screen {
+  background:
+    radial-gradient(ellipse 32% 42% at 50% 47%, rgba(68,48,69,.16), transparent 100%),
+    radial-gradient(ellipse 28% 24% at 50% 49%, rgba(160,120,65,.04), transparent 95%),
+    #020203;
+}
+.startup-panel {
+  width: min(420px, 100%);
+  padding: 24px 28px 28px;
+}
+.startup-mark {
+  position: relative;
+  display: block;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 25px;
+  border: 1px solid rgba(236,194,126,.30);
+  border-radius: 17px;
+  background: linear-gradient(145deg, rgba(71,54,45,.34), rgba(24,21,27,.58));
+  box-shadow: 0 12px 28px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.09), 0 0 26px rgba(222,176,106,.05);
+  transform: rotate(-8deg);
+}
+.startup-mark::before {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 1.5px solid rgba(252,211,144,.79);
+  border-radius: 7px;
+  transform: rotate(8deg);
+}
+.startup-mark::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f4d5a1;
+  box-shadow: 0 0 11px rgba(240,192,124,.47);
+}
+.startup-name {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -.035em;
+  color: #f5f1e9;
+}
+.startup-status {
+  margin: 11px 0 0;
+  min-height: 20px;
+  color: #aca4a5;
+  font-size: 12px;
+  line-height: 20px;
+}
+.startup-progress-track {
+  width: 138px;
+  height: 2px;
+  overflow: hidden;
+  margin: 20px auto 0;
+  border-radius: 2px;
+  background: rgba(244,218,179,.09);
+}
+.startup-progress-fill {
+  display: block;
+  width: 36%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, #e3b775, #e6caa1);
+  transform: translateX(-120%);
+  animation: shub-preview-load 1.7s ease-in-out infinite;
+}
+@keyframes shub-preview-load {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(400%); }
+}
+.startup-screen:has(#startupRetry:not(.hidden)) .startup-progress-fill {
+  animation-play-state: paused;
+  transform: translateX(90%);
+}
+.startup-screen #startupRetry {
+  margin-top: 18px;
+}
+
+/* Only two shell elements receive a subtle entrance once the splash begins
+   to fade. No per-card startup animation and no page layout displacement. */
+html[data-startup="ready"] .topbar {
+  animation: shub-preview-shell-in 440ms cubic-bezier(.2,.75,.25,1) 1270ms both;
+}
+html[data-startup="ready"] .grid,
+html[data-startup="ready"] .pagination:not(.hidden) {
+  animation: shub-preview-shell-in 460ms cubic-bezier(.2,.75,.25,1) 1310ms both;
+}
+@keyframes shub-preview-shell-in {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Pagination / category / type selection gets a short, bounded entrance;
+   cache refreshes and live search never add this class. */
+.grid > .card.shub-enter {
+  animation: shub-preview-card-in 230ms cubic-bezier(.16,.78,.26,1) both;
+  animation-delay: calc(min(var(--shub-enter-index, 0), 19) * 12ms);
+}
+@keyframes shub-preview-card-in {
+  from { opacity: .38; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card, .stat-chip, .filter-button, .search-box, .page-button {
+  transition-timing-function: cubic-bezier(.2,.7,.25,1);
+}
+.card:focus-within {
+  border-color: rgba(222,176,106,.39);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 0 0 1px rgba(222,176,106,.07);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .startup-progress-fill,
+  html[data-startup="ready"] .topbar,
+  html[data-startup="ready"] .grid,
+  html[data-startup="ready"] .pagination:not(.hidden),
+  .grid > .card.shub-enter {
+    animation: none !important;
+  }
+}
+@media (prefers-contrast: more) {
+  .app-shell { background: #020203 !important; }
+  .startup-screen { background: #020203; }
+  .window-titlebar { border-bottom-color: rgba(255,255,255,.40); }
+}

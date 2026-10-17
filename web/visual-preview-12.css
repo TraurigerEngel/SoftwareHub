@@ -1,0 +1,54 @@
+/* Software Hub Visual Preview 12 — motion/launch polish based on video review.
+   Loaded last; older stable/preview layers are intentionally preserved.
+   Targets: no dark grid flicker, quick two-stage splash handoff, no icon changes. */
+
+/* Keep WebView's initial CSS paint the same nearly-black as the Tauri host.
+   This cannot remove the native WebView2 initialization time on Windows. */
+html, body { background: #020203; }
+
+/* The catalog is already fully rendered when data-startup becomes ready.
+   First fade out the logo/title, then fade away the opaque cover.
+   This avoids text ghosting over cards and removes 980ms of idle wait. */
+html[data-startup="ready"] .startup-panel {
+  opacity: 0;
+  transition: opacity 170ms ease-in 170ms;
+}
+html[data-startup="ready"] .startup-screen {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 350ms cubic-bezier(.2,.65,.3,1) 380ms, visibility 0s linear 730ms;
+}
+
+/* Shell and pagination settle under the departing cover, not afterwards. */
+html[data-startup="ready"] .topbar {
+  animation: shub-preview-shell-in 320ms cubic-bezier(.2,.75,.25,1) 340ms both;
+}
+html[data-startup="ready"] .grid,
+html[data-startup="ready"] .pagination:not(.hidden) {
+  animation: shub-preview-shell-in 340ms cubic-bezier(.2,.75,.25,1) 350ms both;
+}
+
+/* On pagination or category changes, keep cards legible from frame one.
+   Maximum cascade = 19 * 3 = 57ms (was 228ms); no blank/dimmed page.
+   Live search and version refreshes still skip this animation. */
+.grid > .card.shub-enter {
+  animation: shub-preview-card-in 180ms cubic-bezier(.2,.75,.25,1) both;
+  animation-delay: calc(min(var(--shub-enter-index, 0), 19) * 3ms);
+}
+@keyframes shub-preview-card-in {
+  from { opacity: .9; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-startup="ready"] .startup-panel,
+  html[data-startup="ready"] .startup-screen {
+    transition: none !important;
+  }
+  html[data-startup="ready"] .topbar,
+  html[data-startup="ready"] .grid,
+  html[data-startup="ready"] .pagination:not(.hidden),
+  .grid > .card.shub-enter {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "software-hub-tauri",
+  "private": true,
+  "version": "0.7.3",
+  "description": "Software Hub v0.7.3 Stable - improved launch splash, portable Windows x64 (Tauri + WebView2)",
+  "scripts": {
+    "verify": "node scripts/verify-preview.js && node --test tests/*.test.cjs",
+    "build:web": "node scripts/stage-fonts.cjs",
+    "build:dev": "npm run verify && npm run build:web && tauri build --debug --no-bundle",
+    "build:release": "npm run verify && npm run build:web && tauri build --no-bundle",
+    "publish:release": "node scripts/publish-release.cjs",
+    "verify:release": "node scripts/verify-release-candidate.cjs",
+    "dev": "npm run build:web && tauri dev"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.12.0"
+  },
+  "engines": {
+    "node": ">=22.13.0 <23"
+  }
+}

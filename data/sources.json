@@ -1,0 +1,75 @@
+{
+  "manual-official": {
+    "label": "Официальный сайт",
+    "description": "Официальная страница программы. Автоматическая версия пока не извлекается надёжно.",
+    "type": "manual",
+    "adapter": null
+  },
+  "manual-device": {
+    "label": "Зависит от устройства",
+    "description": "Версия зависит от конкретного устройства, модели или оборудования.",
+    "type": "manual",
+    "adapter": null
+  },
+  "manual-service": {
+    "label": "Служба",
+    "description": "У сервиса нет единой публичной версии для надёжного сравнения.",
+    "type": "manual",
+    "adapter": null
+  },
+  "github-releases": {
+    "label": "GitHub",
+    "description": "Последний подходящий релиз официального GitHub-репозитория.",
+    "type": "remote",
+    "adapter": "github-releases",
+    "endpoint": "https://api.github.com/repos/{repo}/releases",
+    "atomEndpoint": "https://github.com/{repo}/releases.atom",
+    "defaultPolicy": {
+      "selection": "highest-version",
+      "versionField": "tag_name",
+      "requireVersion": true,
+      "includePrerelease": false
+    }
+  },
+  "official-page": {
+    "label": "Официальная страница",
+    "description": "Версия извлекается с официальной страницы загрузки или релизов.",
+    "type": "remote",
+    "adapter": "official-page",
+    "timeoutMs": 12000,
+    "headers": {}
+  },
+  "dotnet-official": {
+    "label": ".NET / Microsoft",
+    "description": "Последний релиз .NET на официальной странице Microsoft.",
+    "type": "remote",
+    "adapter": "dotnet-official",
+    "timeoutMs": 12000,
+    "headers": {}
+  },
+  "download-page": {
+    "label": "Страница загрузки",
+    "description": "Надёжная страница загрузки или распространения с машиночитаемой версией.",
+    "type": "remote",
+    "adapter": "official-page",
+    "timeoutMs": 12000,
+    "headers": {}
+  },
+  "official-download": {
+    "label": "Официальная загрузка",
+    "description": "Версия определяется по публичной официальной загрузке или перенаправлению на файл.",
+    "type": "remote",
+    "adapter": "official-download",
+    "timeoutMs": 12000,
+    "headers": {},
+    "method": "HEAD"
+  },
+  "official-page-date": {
+    "label": "Официальная страница",
+    "description": "Дата релиза/обновления извлекается с официальной страницы без автоматического определения версии.",
+    "type": "remote",
+    "adapter": "official-page-date",
+    "timeoutMs": 12000,
+    "headers": {}
+  }
+}

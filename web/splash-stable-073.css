@@ -1,0 +1,32 @@
+/* Software Hub v0.7.3 Stable — approved splash pacing only.
+   This file loads AFTER Visual Preview 12, retaining historical styles/tests.
+   Only the initial launch is affected; catalog updates remain instant. */
+
+@keyframes shub073-name-appear {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.startup-name {
+  animation: shub073-name-appear 420ms cubic-bezier(.2,.7,.3,1) both;
+}
+
+/* The catalog is painted before data-startup="ready". Keep the title readable
+   for 1800 ms after that point, fade the title fully, then uncover the catalog.
+   The 50 ms opaque gap prevents text ghosting across the first catalog frame. */
+html[data-startup="ready"] .startup-panel {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out 1800ms;
+}
+html[data-startup="ready"] .startup-screen {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 450ms cubic-bezier(.2,.65,.3,1) 2250ms, visibility 0s linear 2700ms;
+}
+
+/* The original quick shell motion completes behind the opaque cover.
+   No page or card transition rules are changed. */
+@media (prefers-reduced-motion: reduce) {
+  .startup-name { animation: none !important; }
+  html[data-startup="ready"] .startup-panel,
+  html[data-startup="ready"] .startup-screen { transition: none !important; }
+}

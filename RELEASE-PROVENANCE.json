@@ -1,0 +1,13 @@
+{
+  "stableVersion": "0.7.3",
+  "fromRcVersion": "0.7.2-rc.1",
+  "sourceWork": "SoftwareHub_v0.7.2_RC1_20261010-235403_e701dd",
+  "sourceRelease": "Software_Hub_Tauri_v0.7.2_RC1_ReleaseCandidate_20261010-235825",
+  "rcExeSha256": "16e116e599aa5202d3ebfd74bf64b64aa5e4a5c0a21c3f475bb4f41405ec9c94",
+  "rcPortableZipSha256": "e6891435d6310c5f05fa9fee191ae9a202483acade901256f947e8fbd9d42234",
+  "rendererSha256": "95b0563629da2f195dfa1a03d82788bf4f8bf1fa6b08e68e43d63166df94af5e",
+  "rustBackendSha256": "743f50b5a47f184c10253d0367566c149cd6243ee54e80894b563ea3cff3d7bb",
+  "fromStableVersion": "0.7.2",
+  "baseStableSourceZipSha256": "01e68ac20894f92e7d38821326d170555526822342aed75cdc745a44ae32d3aa",
+  "change": "Only post-ready splash hold and fade; renderer/backend/catalog untouched"
+}

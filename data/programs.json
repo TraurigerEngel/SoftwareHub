@@ -1,0 +1,2933 @@
+[
+  {
+    "id": "7zip",
+    "name": "7-Zip",
+    "website": "https://github.com/ip7z/7zip/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ip7z/7zip",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "26.03",
+      "fallbackPublishedAt": "2026-09-04T00:00:00.000Z",
+      "fallbackPublishedAtText": "04.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ip7z/7zip/releases"
+      }
+    ],
+    "programCategory": "Утилиты"
+  },
+  {
+    "id": "adb-appcontrol",
+    "name": "ADB AppControl",
+    "website": "https://adb.cybercat.dev/ru/pc/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://adb.cybercat.dev/ru/pc/",
+      "versionPattern": "Последняя\\s+версия\\s+([0-9]+(?:\\.[0-9]+)+)",
+      "versionPatternFlags": "im",
+      "showReleaseDate": false,
+      "reason": "Официальная русская страница ADB AppControl PC явно публикует последнюю версию."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://adb.cybercat.dev/ru/pc/"
+      }
+    ],
+    "programCategory": "Android"
+  },
+  {
+    "id": "adwcleaner",
+    "name": "AdwCleaner",
+    "website": "https://www.malwarebytes.com/adwcleaner",
+    "versionSource": {
+      "sourceId": "official-page",
+      "urls": [
+        "https://help.malwarebytes.com/hc/en-us/articles/31589455600795-AdwCleaner-Product-Lifecycle"
+      ],
+      "versionPattern": "\\b(\\d+\\.\\d+(?:\\.\\d+){0,2})\\s+Active\\s+\\d{1,2}-[A-Za-z]{3}-\\d{4}\\b",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "publishedAtPattern": "\\b\\d+\\.\\d+(?:\\.\\d+){0,2}\\s+Active\\s+(\\d{1,2}-[A-Za-z]{3}-\\d{4})\\b",
+      "publishedAtPatternFlags": "i",
+      "publishedAtFormat": "day-month-name-year-dash",
+      "fallbackVersion": "8.8.1",
+      "fallbackPublishedAt": "2026-05-13T00:00:00.000Z",
+      "fallbackPublishedAtText": "13.05.2026",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36"
+      },
+      "reason": "Официальный Malwarebytes Help Center публикует таблицу жизненного цикла AdwCleaner с активной версией и GA Date."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.malwarebytes.com/adwcleaner"
+      }
+    ],
+    "programCategory": "Безопасность"
+  },
+  {
+    "id": "amnezia-client",
+    "name": "Amnezia Client",
+    "website": "https://github.com/amnezia-vpn/amnezia-client/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "amnezia-vpn/amnezia-client",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackPublishedAtText": "18.09.2026",
+      "fallbackVersion": "5.0.3.0",
+      "fallbackPublishedAt": "2026-09-18T00:00:00Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/amnezia-vpn/amnezia-client/releases"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "atk-hub",
+    "name": "ATK HUB",
+    "website": "https://www.atk.store/pages/atk-hub",
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://www.atk.store/pages/atk-hub"
+      }
+    ],
+    "programCategory": "Периферия",
+    "cardSummary": "Официальный центр загрузки и настройки ПО для периферии ATK."
+  },
+  {
+    "id": "blur-autoclicker",
+    "name": "Blur AutoClicker",
+    "website": "https://github.com/Blur009/Blur-AutoClicker/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Blur009/Blur-AutoClicker",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "3.9.6",
+      "fallbackPublishedAt": "2026-08-24T00:00:00.000Z",
+      "fallbackPublishedAtText": "24.08.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Blur009/Blur-AutoClicker/releases"
+      }
+    ],
+    "programCategory": "Утилиты"
+  },
+  {
+    "id": "byebyedpi",
+    "name": "ByeByeDPI",
+    "website": "https://github.com/romanvht/ByeByeDPI/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "romanvht/ByeByeDPI",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v\\.?)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "1.7.9",
+      "fallbackPublishedAt": "2026-09-19T00:45:00.000Z",
+      "fallbackPublishedAtText": "19.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/romanvht/ByeByeDPI/releases"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "caesium",
+    "name": "Caesium Image Compressor",
+    "website": "https://github.com/Lymphatus/caesium-image-compressor/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Lymphatus/caesium-image-compressor",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackPublishedAt": "2025-05-17T12:01:31.000Z",
+      "fallbackPublishedAtText": "17.05.2025",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Lymphatus/caesium-image-compressor/releases"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "cheat-engine",
+    "name": "Cheat Engine",
+    "website": "https://cheatengine.org/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://cheatengine.org/downloads.php",
+      "versionPattern": "Cheat\\s+Engine\\s+(\\d+\\.\\d+(?:\\.\\d+)?)(?=\\s+(?:Released\\s+for\\s+Windows|For\\s+Windows))",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "urls": [
+        "https://cheatengine.org/downloads.php",
+        "https://cheatengine.org/"
+      ],
+      "versionPatternFlags": "im",
+      "fallbackVersion": "7.7",
+      "fallbackPublishedAt": "2026-05-29T00:00:00.000Z",
+      "fallbackPublishedAtText": "29.05.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://cheatengine.org/"
+      }
+    ],
+    "programCategory": "Игры"
+  },
+  {
+    "id": "compactgui",
+    "name": "CompactGUI",
+    "website": "https://github.com/IridiumIO/CompactGUI/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "IridiumIO/CompactGUI",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "name",
+        "versionPattern": "^Version\\s+(.+)$",
+        "includePrerelease": true
+      },
+      "fallbackVersion": "4.0 Beta 12",
+      "fallbackPublishedAt": "2026-09-21T11:07:00Z",
+      "fallbackPublishedAtText": "21.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/IridiumIO/CompactGUI/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "crystaldiskinfo",
+    "name": "CrystalDiskInfo",
+    "website": "https://crystalmark.info/en/software/crystaldiskinfo/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://crystalmark.info/en/software/crystaldiskinfo/",
+      "versionPattern": "CrystalDiskInfo\\s+([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "versionFormat": "{1}",
+      "publishedAtPattern": "\\[([0-9]{4}/[0-9]{2}/[0-9]{2})\\]\\s+CrystalDiskInfo\\s+([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "publishedAtFormat": "date",
+      "versionPick": "highest",
+      "fallbackVersion": "9.9.2",
+      "fallbackPublishedAt": "2026-07-25T00:00:00Z",
+      "fallbackPublishedAtText": "25.07.2026",
+      "urls": [
+        "https://crystalmark.info/en/software/crystaldiskinfo/",
+        "https://crystalmark.info/en/"
+      ]
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://crystalmark.info/en/software/crystaldiskinfo/"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "crystaldiskmark",
+    "name": "CrystalDiskMark",
+    "website": "https://crystalmark.info/en/software/crystaldiskmark/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://crystalmark.info/en/software/crystaldiskmark/",
+      "versionPattern": "CrystalDiskMark\\s+([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "versionFormat": "{1}",
+      "publishedAtPattern": "\\[([0-9]{4}/[0-9]{2}/[0-9]{2})\\]\\s+CrystalDiskMark\\s+([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "publishedAtFormat": "date",
+      "versionPick": "highest",
+      "fallbackVersion": "9.0.3",
+      "fallbackPublishedAt": "2026-05-24T00:00:00Z",
+      "fallbackPublishedAtText": "24.05.2026",
+      "urls": [
+        "https://crystalmark.info/en/software/crystaldiskmark/",
+        "https://crystalmark.info/en/"
+      ]
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://crystalmark.info/en/software/crystaldiskmark/"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "ddu",
+    "name": "DDU",
+    "website": "https://www.wagnardsoft.com/display-driver-uninstaller-ddu",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.wagnardsoft.com/display-driver-uninstaller-ddu",
+      "versionPattern": "\\b(18\\.\\d+\\.\\d+\\.\\d+)\\b",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "versionPatternFlags": "gi",
+      "fallbackVersion": "18.1.6.0",
+      "fallbackPublishedAt": "2026-09-15T00:00:00.000Z",
+      "fallbackPublishedAtText": "15.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.wagnardsoft.com/display-driver-uninstaller-ddu"
+      }
+    ],
+    "programCategory": "Драйверы"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "website": "https://discord.com/channels/@me",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://discord.com/download",
+      "reason": "Для Discord автоматическая проверка и отображение версии отключены намеренно: карточка используется как стабильная официальная точка входа и сохраняет связанные OpenAsar / BetterDiscord.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Discord",
+        "url": "https://discord.com/channels/@me"
+      },
+      {
+        "label": "Скачать",
+        "url": "https://discord.com/download"
+      }
+    ],
+    "programCategory": "Общение",
+    "relatedActions": [
+      {
+        "label": "OpenAsar",
+        "url": "https://openasar.dev/"
+      },
+      {
+        "label": "BetterDiscord",
+        "url": "https://betterdiscord.app/"
+      }
+    ],
+    "cardSummary": "Мессенджер для общения, голосовых каналов, сообществ и игровых серверов."
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto Clipboard",
+    "website": "https://github.com/sabrogden/Ditto/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "sabrogden/Ditto",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false,
+        "ignoreFuturePublished": true
+      },
+      "fallbackVersion": "3.25.113.0",
+      "fallbackPublishedAt": "2025-09-27T01:31:00Z",
+      "fallbackPublishedAtText": "27.09.2025",
+      "reason": "Актуальная стабильная версия Ditto берётся из официальных GitHub Releases. Релизы с датой публикации в будущем относительно текущего момента игнорируются; стабильный релиз 3.25.113.0 опубликован 27.09.2025.",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/sabrogden/Ditto/releases"
+      }
+    ],
+    "programCategory": "Утилиты"
+  },
+  {
+    "id": "everything",
+    "name": "Everything",
+    "website": "https://www.voidtools.com/downloads/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "versionPattern": "Version\\s+(\\d+\\.\\d+\\.\\d+\\.\\d+)(?!\\d|b)",
+      "versionFormat": "{1}",
+      "urls": [
+        "https://www.voidtools.com/Changes.txt",
+        "https://ftp.voidtools.com/downloads/",
+        "https://www.voidtools.com/downloads/"
+      ],
+      "versionPick": "highest",
+      "versionPatternFlags": "im",
+      "publishedAtPattern": "(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\\s+(\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4})\\s*:",
+      "publishedAtPatternFlags": "i",
+      "publishedAtFormat": "day-month-year",
+      "fallbackVersion": "1.4.1.1032",
+      "fallbackPublishedAt": "2026-01-23T00:00:00Z"
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.voidtools.com/downloads/"
+      }
+    ],
+    "programCategory": "Файлы"
+  },
+  {
+    "id": "ffmpeg-builds",
+    "name": "FFmpeg Builds",
+    "website": "https://github.com/BtbN/FFmpeg-Builds/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "BtbN/FFmpeg-Builds",
+      "releasePolicy": {
+        "selection": "latest-published",
+        "versionField": "tag_name",
+        "versionPattern": "^autobuild-(\\d{4}-\\d{2}-\\d{2})(?:-\\d{2}-\\d{2})?$",
+        "includePrerelease": false,
+        "excludePattern": "^latest$"
+      },
+      "fallbackVersion": "2026-09-24",
+      "fallbackPublishedAt": "2026-09-24T14:15:00.000Z",
+      "fallbackPublishedAtText": "24.09.2026",
+      "showReleaseDate": true,
+      "reason": "BtbN публикует rolling Auto-Build релизы; в поле версии показывается дата последней автосборки."
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/BtbN/FFmpeg-Builds/releases"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "flow-launcher",
+    "name": "Flow Launcher",
+    "website": "https://github.com/Flow-Launcher/Flow.Launcher/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Flow-Launcher/Flow.Launcher",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.1.4",
+      "fallbackPublishedAt": "2026-09-20T00:00:00Z",
+      "fallbackPublishedAtText": "20.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Flow-Launcher/Flow.Launcher/releases"
+      }
+    ],
+    "programCategory": "Утилиты"
+  },
+  {
+    "id": "hwinfo",
+    "name": "HWiNFO",
+    "website": "https://www.hwinfo.com/download/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.hwinfo.com/version-history/",
+      "versionPattern": "Latest\\s+v?([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "publishedAtPattern": "Released\\s+on\\s+([A-Za-z]{3}-\\d{1,2}-\\d{4})",
+      "publishedAtFormat": "month-name-day-year-dash",
+      "fallbackVersion": "8.52",
+      "fallbackPublishedAtText": "25.08.2026",
+      "fallbackPublishedAt": "2026-08-25T00:00:00.000Z",
+      "timeoutMs": 4500,
+      "checkTimeoutMs": 10000,
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36"
+      }
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.hwinfo.com/download/"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "java8",
+    "name": "Java 8",
+    "website": "https://www.java.com/en/download/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.java.com/en/download/java8_update.jsp",
+      "versionPattern": "\\bVersion\\s+8\\s+Update\\s+(\\d{1,4})\\b",
+      "versionFormat": "8 Update {1}",
+      "versionPick": "highest",
+      "urls": [
+        "https://www.java.com/en/download/java8_update.jsp"
+      ],
+      "publishedAtPattern": "Version\\s+8\\s+Update\\s+\\d{1,4}\\s+Release\\s+date\\s*:\\s*([A-Za-z]+\\s+\\d{1,2},\\s+\\d{4})",
+      "publishedAtFormat": "month-name-day-year-comma",
+      "versionPatternFlags": "i",
+      "publishedAtPatternFlags": "i",
+      "reason": "Официальная страница обновлений Java 8 публикует версию и связанную с ней дату релиза; адрес скачивания не меняется."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.java.com/en/download/"
+      }
+    ],
+    "programCategory": "Компоненты"
+  },
+  {
+    "id": "klite",
+    "name": "K-Lite Codec Pack",
+    "website": "https://codecguide.com/download_kl.htm",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://codecguide.com/",
+      "versionPattern": "K-Lite\\s+Codec\\s+Pack\\s+(\\d+\\.\\d+\\.\\d+)(?!\\s+Update)\\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\\s+([A-Za-z]+\\s+\\d{1,2}(?:st|nd|rd|th)?\\s+\\d{4})",
+      "versionPatternFlags": "im",
+      "versionPick": "highest",
+      "publishedAtMatchGroup": 2,
+      "publishedAtFormat": "english-date",
+      "fallbackVersion": "20.0.0",
+      "fallbackPublishedAt": "2026-09-17T00:00:00.000Z",
+      "fallbackPublishedAtText": "17.09.2026",
+      "showReleaseDate": true,
+      "reason": "Берём последнюю полноценную версию K-Lite Codec Pack и исключаем отдельные Update-пакеты."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://codecguide.com/download_kl.htm"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "lavfilters",
+    "name": "LAVFilters",
+    "website": "https://github.com/Nevcairiel/LAVFilters/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Nevcairiel/LAVFilters",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "0.83",
+      "fallbackPublishedAt": "2026-08-17T00:00:00Z",
+      "fallbackPublishedAtText": "17.08.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Nevcairiel/LAVFilters/releases"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "mchose-hub",
+    "name": "MCHOSE Hub",
+    "website": "https://www.mchose.store/pages/firmware-2",
+    "versionSource": {
+      "sourceId": "manual-device",
+      "url": "https://www.mchose.store/pages/firmware-2",
+      "reason": "MCHOSE HUB и прошивки зависят от конкретной модели устройства; одна глобальная версия не существует.",
+      "showLatestVersion": false,
+      "showReleaseDate": false,
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.mchose.store/pages/firmware-2"
+      }
+    ],
+    "programCategory": "Периферия",
+    "cardSummary": "Приложение для настройки и управления периферийными устройствами MCHOSE."
+  },
+  {
+    "id": "afterburner",
+    "name": "MSI Afterburner",
+    "website": "https://www.msi.com/Landing/afterburner/graphics-cards",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.msi.com/Landing/afterburner/graphics-cards",
+      "versionPattern": "([0-9]+\\.[0-9]+\\.[0-9]+)\\s*\\(Final\\)",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "urls": [
+        "https://www.msi.com/Landing/afterburner/graphics-cards"
+      ],
+      "publishedAtPattern": "Released\\s*:\\s*([A-Za-z]{3,9}\\s+\\d{4})",
+      "publishedAtPatternFlags": "i",
+      "publishedAtFormat": "month-year",
+      "fallbackVersion": "4.6.6",
+      "fallbackPublishedAtText": "09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.msi.com/Landing/afterburner/graphics-cards"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "dotnet-10",
+    "name": ".NET 10.0",
+    "website": "https://dotnet.microsoft.com/en-us/download/dotnet",
+    "versionSource": {
+      "sourceId": "dotnet-official",
+      "url": "https://dotnet.microsoft.com/en-us/download/dotnet/10.0",
+      "versionPattern": "Downloads for \\.NET 10\\.0 (?:Desktop )?Runtime\\s*\\(v(10\\.0\\.\\d+)\\)",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "versionPatternFlags": "gi",
+      "publishedAtPattern": "Latest release date\\s+([A-Za-z]+\\s+\\d{1,2},\\s+\\d{4})",
+      "publishedAtFormat": "month-name-day-year-comma",
+      "fallbackVersion": "10.0.12",
+      "fallbackPublishedAt": "2026-09-08T00:00:00.000Z",
+      "fallbackPublishedAtText": "08.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://dotnet.microsoft.com/en-us/download/dotnet"
+      }
+    ],
+    "programCategory": "Компоненты"
+  },
+  {
+    "id": "dotnet35-offline",
+    "name": ".NET Framework 3.5 Offline",
+    "website": "https://github.com/rijans/.NET-Framework-3.5-Offline-Installer/releases",
+    "versionNote": "Версия 2.3 — версия самого офлайн-установщика; 3.5 — версия компонента .NET Framework в Windows. Эти версии не сравниваются между собой.",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "rijans/.NET-Framework-3.5-Offline-Installer",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(2\\.\\d+(?:\\.\\d+)?)$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.3",
+      "fallbackPublishedAt": "2023-06-10T19:05:57Z",
+      "fallbackPublishedAtText": "11.06.2023",
+      "reason": "Версия 2.3 относится к самому офлайн-установщику. Версия компонента .NET Framework 3.5 в Windows проверяется отдельно через NetFx3; эти версии не сравниваются.",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/rijans/.NET-Framework-3.5-Offline-Installer/releases"
+      }
+    ],
+    "programCategory": "Компоненты"
+  },
+  {
+    "id": "nvcleanstall",
+    "name": "NVCleanstall",
+    "website": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/",
+    "versionSource": {
+      "sourceId": "download-page",
+      "url": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/",
+      "urls": [
+        "https://www.techpowerup.com/download/techpowerup-nvcleanstall/"
+      ],
+      "versionPattern": "NVCleanstall\\s+v(\\d+\\.\\d+\\.\\d+)",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "fallbackVersion": "1.19.0"
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/"
+      }
+    ],
+    "programCategory": "Драйверы"
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA Driver",
+    "website": "https://www.nvidia.com/en-us/drivers/",
+    "versionSource": {
+      "sourceId": "manual-device",
+      "url": "https://www.nvidia.com/en-us/drivers/",
+      "reason": "Версия драйвера зависит от конкретной GPU, ветки драйвера и версии Windows; единой версии для всех ПК нет.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.nvidia.com/en-us/drivers/"
+      }
+    ],
+    "programCategory": "Драйверы",
+    "cardSummary": "Официальный драйвер NVIDIA для видеокарт GeForce и другого совместимого оборудования."
+  },
+  {
+    "id": "nv-profile-inspector",
+    "name": "NVIDIA Profile Inspector",
+    "website": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Orbmu2k/nvidiaProfileInspector",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "3.0.2.1",
+      "fallbackPublishedAt": "2026-07-16T00:00:00Z",
+      "fallbackPublishedAtText": "16.07.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases"
+      }
+    ],
+    "programCategory": "Драйверы"
+  },
+  {
+    "id": "ohm",
+    "name": "Open Hardware Monitor",
+    "website": "https://openhardwaremonitor.org/downloads/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://openhardwaremonitor.org/downloads/",
+      "versionPattern": "Open\\s+Hardware\\s+Monitor\\s+(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "im",
+      "versionPick": "highest",
+      "fallbackVersion": "0.9.6",
+      "showReleaseDate": false,
+      "reason": "Официальная страница Downloads публикует текущую версию Open Hardware Monitor."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://openhardwaremonitor.org/downloads/"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "name": "PinWindow",
+    "website": "https://github.com/helliong/pinWindow/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "helliong/pinWindow",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackPublishedAt": "2026-08-10T00:00:00.000Z",
+      "fallbackPublishedAtText": "10.08.2026",
+      "showReleaseDate": true
+    },
+    "id": "pinwindow",
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/helliong/pinWindow/releases"
+      }
+    ],
+    "programCategory": "Утилиты"
+  },
+  {
+    "id": "potplayer",
+    "name": "PotPlayer",
+    "website": "https://potplayer.tv/?lang=ru",
+    "versionSource": {
+      "sourceId": "official-page",
+      "urls": [
+        "https://t1.kakaocdn.net/potplayer/PotPlayer/v4/Update2/UpdateEng.html",
+        "https://t1.kakaocdn.net/potplayer/PotPlayer/v4/Update2/Update.html"
+      ],
+      "versionPattern": "\\[(\\d{6})\\]",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "publishedAtFromVersion": "yymmdd",
+      "fallbackVersion": "260819",
+      "fallbackPublishedAt": "2026-08-19T00:00:00.000Z",
+      "fallbackPublishedAtText": "19.08.2026",
+      "reason": "Официальная история обновлений Kakao CDN публикует номер актуальной сборки в формате [YYMMDD]."
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://potplayer.tv/?lang=ru"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "prismlauncher",
+    "name": "Prism Launcher",
+    "website": "https://prismlauncher.org/download/windows/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "PrismLauncher/PrismLauncher",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "11.1.0",
+      "fallbackPublishedAt": "2026-09-03T06:16:28.000Z",
+      "fallbackPublishedAtText": "03.09.2026",
+      "reason": "Версия берётся из официальных GitHub Releases; основная кнопка ведёт на официальную Windows-страницу загрузки."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://prismlauncher.org/download/windows/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/PrismLauncher/PrismLauncher/releases"
+      }
+    ],
+    "programCategory": "Minecraft"
+  },
+  {
+    "id": "qbittorrent",
+    "name": "qBittorrent",
+    "website": "https://github.com/qbittorrent/qBittorrent/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "qbittorrent/qBittorrent",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^release-(\\d+\\.\\d+\\.\\d+)$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "5.2.4",
+      "reason": "Проверка официальных GitHub Releases: выбирается максимальная стабильная версия release-X.Y.Z, beta/rc исключены. Основная кнопка GitHub; SourceForge — альтернативная загрузка."
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/qbittorrent/qBittorrent/releases"
+      },
+      {
+        "label": "SourceForge",
+        "url": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "radminvpn",
+    "name": "Radmin VPN",
+    "website": "https://www.radmin-vpn.com/",
+    "versionSource": {
+      "sourceId": "official-download",
+      "url": "https://download.radmin-vpn.com/download/files/Radmin_VPN_2.1.4951.1.exe",
+      "filenamePattern": "Radmin_VPN_(\\d+\\.\\d+\\.\\d+\\.\\d+)\\.exe",
+      "showReleaseDate": false,
+      "reason": "Официальная кнопка загрузки ведёт на прямой exe-файл с версией в имени."
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://www.radmin-vpn.com/"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "revanced-gmscore",
+    "name": "ReVanced + GmsCore",
+    "website": "https://revanced.app/download",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://revanced.app/download",
+      "reason": "Связанная карточка двух компонентов: ReVanced Manager и ReVanced GmsCore имеют независимые версии, поэтому единый номер версии не показывается.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "ReVanced",
+        "url": "https://revanced.app/download"
+      },
+      {
+        "label": "GmsCore",
+        "url": "https://github.com/ReVanced/GmsCore/releases"
+      }
+    ],
+    "programCategory": "Android",
+    "cardSummary": "Набор для установки модифицированных Android-приложений ReVanced с поддержкой GmsCore."
+  },
+  {
+    "id": "rtss",
+    "name": "RivaTuner Statistics Server",
+    "website": "https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/",
+      "versionPattern": "RTSS\\s+Rivatuner\\s+Statistics\\s+Server\\s+Download\\s+([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "versionFormat": "{1}",
+      "versionPick": "highest",
+      "urls": [
+        "https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/",
+        "https://www.guru3d.com/pages/"
+      ],
+      "versionPatternFlags": "i",
+      "fallbackVersion": "7.3.7",
+      "reason": "Guru3D — официальный источник RTSS. Версия подтверждается на странице RTSS или по прямой ссылке на RTSS в официальном списке Guru3D. Если оба источника не подтверждают релиз, отображается резервная версия.",
+      "renderedPageUrl": "https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/",
+      "renderedPageTimeoutMs": 8000,
+      "disableCurlFallback": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "website": "https://getsharex.com/downloads",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ShareX/ShareX",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "21.0.0",
+      "fallbackPublishedAt": "2026-07-03T00:00:00Z",
+      "fallbackPublishedAtText": "03.07.2026"
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://getsharex.com/downloads"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ShareX/ShareX/releases"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "snipaste",
+    "name": "Snipaste",
+    "website": "https://www.snipaste.com/download.html",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.snipaste.com/download.html",
+      "versionPattern": "\\b(\\d+\\.\\d+\\.\\d+)\\s+Latest\\s+(\\d{4}/\\d{2}/\\d{2})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "publishedAtMatchGroup": 2,
+      "publishedAtFormat": "date",
+      "fallbackVersion": "2.11.3",
+      "fallbackPublishedAt": "2026-01-18T00:00:00.000Z",
+      "fallbackPublishedAtText": "18.01.2026",
+      "showReleaseDate": true,
+      "reason": "Официальная страница Snipaste публикует таблицу History Versions с пометкой Latest и датой релиза."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.snipaste.com/download.html"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "website": "https://store.steampowered.com/about/?l=russian",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "gibbed/SteamAchievementManager",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(\\d+(?:\\.\\d+){1,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "7.0.41",
+      "fallbackPublishedAt": "2026-03-19T00:00:00.000Z",
+      "fallbackPublishedAtText": "19.03.2026",
+      "showOnSiteCard": true,
+      "versionLabel": "Версия SAM",
+      "releaseLabel": "Релиз SAM",
+      "reason": "Версия и дата относятся только к Steam Achievement Manager (SAM). Версия Steam Client намеренно не проверяется и не отображается."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://store.steampowered.com/about/?l=russian"
+      },
+      {
+        "label": "Профиль",
+        "url": "https://steamcommunity.com/id/TraurigerEngel/"
+      },
+      {
+        "label": "SAM",
+        "url": "https://github.com/gibbed/SteamAchievementManager/releases"
+      }
+    ],
+    "type": "site",
+    "siteCategory": "Игры",
+    "siteSummary": "Магазин, игровая платформа и сообщество Valve."
+  },
+  {
+    "id": "visualcpp",
+    "name": "Visual C++ Runtime",
+    "website": "https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/",
+    "versionSource": {
+      "showLatestVersion": false,
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/"
+      }
+    ],
+    "programCategory": "Компоненты"
+  },
+  {
+    "id": "windhawk",
+    "name": "Windhawk",
+    "website": "https://windhawk.net/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ramensoftware/windhawk",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      }
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://windhawk.net/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ramensoftware/windhawk/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "wpd",
+    "name": "WPD",
+    "website": "https://wpd.app/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://wpd.app/",
+      "versionPattern": "(?:^|\\s)([0-9]+\\.[0-9]+\\.[0-9]+\\s+RC\\s+[0-9]+)\\s+\\d{2}-\\d{2}-\\d{4}",
+      "versionFormat": "{1}",
+      "urls": [
+        "https://wpd.app/changelog/",
+        "https://wpd.app/"
+      ],
+      "versionPatternFlags": "i",
+      "publishedAtPattern": "([0-9]{2}-[0-9]{2}-[0-9]{4})",
+      "publishedAtFormat": "month-day-year",
+      "fallbackVersion": "1.5.2042 RC 1",
+      "fallbackPublishedAt": "2021-10-17T00:00:00Z",
+      "fallbackPublishedAtText": "17.10.2021"
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://wpd.app/"
+      }
+    ],
+    "programCategory": "Безопасность"
+  },
+  {
+    "id": "yandex-disk",
+    "name": "Yandex Disk",
+    "website": "https://360.yandex.ru/disk/download/",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://360.yandex.ru/disk/download/",
+      "reason": "Официальная страница загрузки Яндекс Диска. Публичная и стабильная версия клиента не подтверждается достаточно надёжно, поэтому карточка показывается без автоматической версии.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://webdav.yandex.ru/share/dist/WinDisk4Setup_x64.msi"
+      }
+    ],
+    "programCategory": "Файлы",
+    "cardSummary": "Облачное хранилище Яндекса для синхронизации, резервного копирования и обмена файлами."
+  },
+  {
+    "id": "ytsage",
+    "name": "YTSage",
+    "website": "https://github.com/oop7/YTSage/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "oop7/YTSage",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "5.5.6",
+      "fallbackPublishedAt": "2026-09-18T00:00:00.000Z",
+      "fallbackPublishedAtText": "18.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/oop7/YTSage/releases"
+      },
+      {
+        "label": "FFmpeg Installer",
+        "url": "https://github.com/oop7/ffmpeg-install-guide/releases"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "7themes",
+    "name": "7themes",
+    "website": "https://7themes.su/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://7themes.su/",
+      "reason": "Каталог тем и оформления Windows; единой версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Каталог",
+        "url": "https://7themes.su/"
+      }
+    ],
+    "siteCategory": "Оформление",
+    "siteSummary": "Темы, иконки, курсоры и оформление Windows."
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "website": "https://chatgpt.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://chatgpt.com/",
+      "reason": "Веб-сервис; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть чат",
+        "url": "https://chatgpt.com/"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "Веб-чат и ИИ-ассистент OpenAI."
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "website": "https://chat.deepseek.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://chat.deepseek.com/",
+      "reason": "Веб-сервис; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть чат",
+        "url": "https://chat.deepseek.com/"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "Веб-чат с моделями DeepSeek."
+  },
+  {
+    "id": "hostvds",
+    "name": "HostVDS",
+    "website": "https://hostvds.com/control/servers/list",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://hostvds.com/control/servers/list",
+      "reason": "Панель управления VPS; версии для сравнения нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Серверы",
+        "url": "https://hostvds.com/control/servers/list"
+      }
+    ],
+    "siteCategory": "VPS",
+    "siteSummary": "Панель управления VPS-серверами HostVDS."
+  },
+  {
+    "id": "keysoft-windows-download",
+    "name": "Keysoft — Windows Download",
+    "website": "https://keysoft.store/windows-download",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://keysoft.store/windows-download",
+      "reason": "Страница загрузок Windows; единой версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Загрузки Windows",
+        "url": "https://keysoft.store/windows-download"
+      }
+    ],
+    "siteCategory": "Windows",
+    "siteSummary": "Страница загрузок Windows и установочных материалов."
+  },
+  {
+    "id": "qwen",
+    "name": "Qwen",
+    "website": "https://chat.qwen.ai/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://chat.qwen.ai/",
+      "reason": "Веб-сервис; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть чат",
+        "url": "https://chat.qwen.ai/"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "Веб-чат с моделями Qwen."
+  },
+  {
+    "id": "remontka-bsod",
+    "name": "Remontka.pro — BSOD",
+    "website": "https://remontka.pro/bsod/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://remontka.pro/bsod/",
+      "reason": "Справочная страница по ошибкам BSOD; версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Справочник",
+        "url": "https://remontka.pro/bsod/"
+      }
+    ],
+    "siteCategory": "Windows",
+    "siteSummary": "Справочник по BSOD и ошибкам Windows."
+  },
+  {
+    "id": "root-device",
+    "name": "root-device",
+    "website": "https://root-device.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://root-device.com/",
+      "reason": "Это сайт, а не устанавливаемая программа; версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Каталог",
+        "url": "https://root-device.com/"
+      }
+    ],
+    "siteCategory": "Android",
+    "siteSummary": "Каталог Android-приложений, модификаций и материалов о root."
+  },
+  {
+    "id": "spotify-web",
+    "name": "Spotify",
+    "website": "https://open.spotify.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://open.spotify.com/",
+      "reason": "Веб-сервис; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Веб-плеер",
+        "url": "https://open.spotify.com/"
+      }
+    ],
+    "siteCategory": "Музыка",
+    "siteSummary": "Веб-плеер Spotify для музыки и подкастов."
+  },
+  {
+    "id": "vd6s",
+    "name": "VD6S",
+    "website": "https://vd6s.com/ru2/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://vd6s.com/ru2/",
+      "reason": "Веб-сервис; единой версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Загрузчик",
+        "url": "https://vd6s.com/ru2/"
+      }
+    ],
+    "siteCategory": "Видео",
+    "siteSummary": "Онлайн-загрузчик YouTube в MP3 или MP4."
+  },
+  {
+    "id": "webcam-mic-test",
+    "name": "Webcam & Mic Test",
+    "website": "https://webcammictest.com/ru/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://webcammictest.com/ru/",
+      "reason": "Онлайн-тест камеры и микрофона; версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Тест",
+        "url": "https://webcammictest.com/ru/"
+      }
+    ],
+    "siteCategory": "Тесты",
+    "siteSummary": "Онлайн-проверка веб-камеры и микрофона."
+  },
+  {
+    "id": "unattend-generator",
+    "name": "Windows Unattend Generator",
+    "website": "https://schneegans.de/windows/unattend-generator/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://schneegans.de/windows/unattend-generator/",
+      "reason": "Веб-генератор ответного файла Windows; версии для сравнения нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Генератор",
+        "url": "https://schneegans.de/windows/unattend-generator/"
+      }
+    ],
+    "siteCategory": "Windows",
+    "siteSummary": "Генератор autounattend.xml для автоматической установки Windows."
+  },
+  {
+    "id": "browser-extensions",
+    "name": "Расширения Яндекс Браузера",
+    "website": "https://yandex.com/support/browser/en/personalization/extension",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://yandex.com/support/browser/en/personalization/extension",
+      "reason": "Внутренняя страница browser://extensions/ доступна только внутри Яндекс Браузера; Software Hub копирует её адрес для вставки в адресную строку."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Скопировать адрес",
+        "copyText": "browser://extensions/"
+      },
+      {
+        "label": "Справка",
+        "url": "https://yandex.com/support/browser/en/personalization/extension"
+      }
+    ],
+    "siteCategory": "Браузер",
+    "siteSummary": "Быстрый доступ к управлению расширениями Яндекс Браузера."
+  },
+  {
+    "id": "imageglass",
+    "name": "ImageGlass",
+    "website": "https://imageglass.org/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "d2phap/ImageGlass",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "10.0.6.906",
+      "fallbackPublishedAt": "2026-09-05T00:00:00.000Z",
+      "fallbackPublishedAtText": "05.09.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://imageglass.org/releases"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/d2phap/ImageGlass/releases"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "kaspersky-vrt",
+    "name": "Kaspersky Virus Removal Tool",
+    "website": "https://www.kaspersky.ru/downloads/free-virus-removal-tool",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://www.kaspersky.ru/downloads/free-virus-removal-tool",
+      "reason": "Официальная страница KVRT; стабильный публичный номер текущей сборки на странице не публикуется.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.kaspersky.ru/downloads/free-virus-removal-tool"
+      }
+    ],
+    "programCategory": "Безопасность",
+    "cardSummary": "Утилита Kaspersky для поиска и удаления вредоносных программ без установки."
+  },
+  {
+    "id": "yt-dlp",
+    "name": "yt-dlp",
+    "website": "https://github.com/yt-dlp/yt-dlp/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "yt-dlp/yt-dlp",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(\\d{4}\\.\\d{2}\\.\\d{2})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2026.08.19",
+      "fallbackPublishedAt": "2026-08-19T00:00:00.000Z",
+      "fallbackPublishedAtText": "19.08.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/yt-dlp/yt-dlp/releases"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "winhance",
+    "name": "Winhance",
+    "website": "https://winhance.net/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "memstechtips/Winhance",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){2,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "26.06.12",
+      "fallbackPublishedAt": "2026-06-12T00:00:00.000Z",
+      "fallbackPublishedAtText": "12.06.2026",
+      "reason": "Официальные GitHub Releases Winhance; prerelease-сборки исключаются."
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://winhance.net/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/memstechtips/Winhance/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "windows-update-disabler",
+    "name": "Windows Update Disabler",
+    "website": "https://github.com/tsgrgo/windows-update-disabler/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "tsgrgo/windows-update-disabler",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.0.0",
+      "fallbackPublishedAt": "2026-07-23T00:00:00.000Z",
+      "fallbackPublishedAtText": "23.07.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/tsgrgo/windows-update-disabler/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "windows-defender-remover",
+    "name": "Windows Defender Remover",
+    "website": "https://github.com/ionuttbara/windows-defender-remover/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ionuttbara/windows-defender-remover",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^release(?:_def_)?(\\d+(?:[_\\.]\\d+){0,3})(?:-rev\\d+)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "13",
+      "fallbackPublishedAt": "2026-08-24T00:00:00.000Z",
+      "fallbackPublishedAtText": "24.08.2026",
+      "reason": "Теги репозитория используют формы release13-rev1 и release_def_12_8_4; карточка показывает номер основной версии."
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ionuttbara/windows-defender-remover/releases"
+      }
+    ],
+    "programCategory": "Безопасность"
+  },
+  {
+    "id": "trafficmonitor",
+    "name": "TrafficMonitor",
+    "website": "https://github.com/zhongyang219/TrafficMonitor/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "zhongyang219/TrafficMonitor",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^V?(\\d+(?:\\.\\d+){1,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "1.86",
+      "fallbackPublishedAt": "2026-03-29T00:00:00.000Z",
+      "fallbackPublishedAtText": "29.03.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/zhongyang219/TrafficMonitor/releases"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "snappy-driver-installer-origin",
+    "name": "Snappy Driver Installer Origin",
+    "website": "https://www.glenn.delahoy.com/snappy-driver-installer-origin/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.glenn.delahoy.com/snappy-driver-installer-origin/",
+      "versionPattern": "Snappy\\s+Driver\\s+Installer\\s+Origin\\s+Version\\s+(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "2.0.4",
+      "fallbackOnParseMiss": true,
+      "showReleaseDate": false,
+      "reason": "Официальная страница загрузки публикует текущую версию приложения отдельно от еженедельных Driver Pack updates."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.glenn.delahoy.com/snappy-driver-installer-origin/"
+      }
+    ],
+    "programCategory": "Драйверы"
+  },
+  {
+    "id": "windirstat",
+    "name": "WinDirStat",
+    "website": "https://windirstat.net/download.html",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "windirstat/windirstat",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^release/v?(\\d+(?:\\.\\d+){1,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.8.0",
+      "fallbackPublishedAt": "2026-08-02T00:00:00.000Z",
+      "fallbackPublishedAtText": "02.08.2026",
+      "reason": "Версия берётся из официальных GitHub Releases; beta/prerelease игнорируются, кнопка ведёт на официальный windirstat.net."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://windirstat.net/download.html"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/windirstat/windirstat/releases"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "flydigi-game-center",
+    "name": "Flydigi Game Center",
+    "website": "https://shops.flydigi.com/pages/game-center",
+    "versionSource": {
+      "sourceId": "manual-device",
+      "url": "https://shops.flydigi.com/pages/game-center",
+      "reason": "Официальная страница публикует несколько веток Flydigi Space/App Store для разных моделей устройств, поэтому единой версии карточки нет.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://shops.flydigi.com/pages/game-center"
+      }
+    ],
+    "programCategory": "Периферия",
+    "cardSummary": "Приложение для настройки и управления игровыми устройствами Flydigi."
+  },
+  {
+    "id": "opencck-iplist",
+    "name": "OpenCCK IP List",
+    "type": "site",
+    "website": "https://iplist.opencck.org/ru",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://iplist.opencck.org/ru",
+      "reason": "Онлайн-сервис со списками IP; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "IP-списки",
+        "url": "https://iplist.opencck.org/ru"
+      }
+    ],
+    "siteCategory": "Сеть",
+    "siteSummary": "Генератор IP/CIDR-списков для доменов и интернет-сервисов."
+  },
+  {
+    "id": "warp-generation",
+    "name": "AmneziaWG + WARP Generation",
+    "website": "https://github.com/amnezia-vpn/amneziawg-windows-client/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "amnezia-vpn/amneziawg-windows-client",
+      "fallbackVersion": "3.1.0",
+      "fallbackOnParseMiss": true,
+      "reason": "Официальные GitHub Releases клиента AmneziaWG для Windows; prerelease-релизы игнорируются. WARP Generation добавлен как связанный генератор конфигураций."
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/amnezia-vpn/amneziawg-windows-client/releases"
+      },
+      {
+        "label": "Генератор",
+        "url": "https://warp-generation.github.io/"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "uup-dump",
+    "name": "UUP dump",
+    "type": "site",
+    "website": "https://uupdump.net/known.php",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://uupdump.net/known.php",
+      "reason": "Каталог известных сборок Windows; единой версии сервиса нет."
+    },
+    "actions": [
+      {
+        "label": "Сборки",
+        "url": "https://uupdump.net/known.php"
+      }
+    ],
+    "siteCategory": "Windows",
+    "siteSummary": "Каталог известных UUP-сборок Windows."
+  },
+  {
+    "id": "check-host-tcp",
+    "name": "Check-Host — TCP 95.182.80.39",
+    "type": "site",
+    "website": "https://check-host.net/check-tcp?host=95.182.80.39",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://check-host.net/check-tcp?host=95.182.80.39",
+      "reason": "Онлайн-проверка TCP для сохранённого адреса; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Проверить",
+        "url": "https://check-host.net/check-tcp?host=95.182.80.39"
+      }
+    ],
+    "siteCategory": "Сеть",
+    "siteSummary": "TCP-проверка адреса 95.182.80.39 из разных точек."
+  },
+  {
+    "id": "play-speed-calc",
+    "name": "Playback Speed Calculator",
+    "type": "site",
+    "website": "https://playspeedcalc.com/?h=0&m=0&s=0&x=1.25",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://playspeedcalc.com/?h=0&m=0&s=0&x=1.25",
+      "reason": "Онлайн-калькулятор скорости воспроизведения; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Калькулятор",
+        "url": "https://playspeedcalc.com/?h=0&m=0&s=0&x=1.25"
+      }
+    ],
+    "siteCategory": "Расчёт",
+    "siteSummary": "Расчёт длительности видео при другой скорости воспроизведения."
+  },
+  {
+    "id": "motorola-notification",
+    "name": "Motorola Notification",
+    "type": "site",
+    "website": "https://instantsbutton.com/ru/sound/motorola-notification",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://instantsbutton.com/ru/sound/motorola-notification",
+      "reason": "Страница звукового эффекта; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Открыть звук",
+        "url": "https://instantsbutton.com/ru/sound/motorola-notification"
+      }
+    ],
+    "siteCategory": "Звук",
+    "siteSummary": "Страница звука уведомления Motorola."
+  },
+  {
+    "id": "pwdseed-password-generator",
+    "name": "PwdSeed — Password Generator",
+    "type": "site",
+    "website": "https://pwdseed.com/strong-password-generator",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://pwdseed.com/strong-password-generator",
+      "reason": "Онлайн-генератор паролей; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Генератор",
+        "url": "https://pwdseed.com/strong-password-generator"
+      }
+    ],
+    "siteCategory": "Пароли",
+    "siteSummary": "Онлайн-генератор стойких паролей."
+  },
+  {
+    "id": "1progs",
+    "name": "1Progs",
+    "type": "site",
+    "website": "https://1progs.ru/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://1progs.ru/",
+      "reason": "Сторонний каталог программ; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Каталог",
+        "url": "https://1progs.ru/"
+      }
+    ],
+    "siteCategory": "Каталог",
+    "siteSummary": "Сторонний каталог программ для Windows."
+  },
+  {
+    "id": "full-black-screen",
+    "name": "Full Black Screen",
+    "type": "site",
+    "website": "https://www.fullblackscreen.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://www.fullblackscreen.com/",
+      "reason": "Веб-инструмент полноэкранной заливки; версии нет."
+    },
+    "actions": [
+      {
+        "label": "На весь экран",
+        "url": "https://www.fullblackscreen.com/"
+      }
+    ],
+    "siteCategory": "Экран",
+    "siteSummary": "Полноэкранная чёрная заливка для монитора."
+  },
+  {
+    "id": "mems-tech-tips",
+    "name": "Memory's Tech Tips",
+    "type": "site",
+    "website": "https://memstechtips.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://memstechtips.com/",
+      "reason": "Сайт с руководствами и инструментами; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Гайды",
+        "url": "https://memstechtips.com/"
+      }
+    ],
+    "siteCategory": "Справка",
+    "siteSummary": "Гайды по Windows, Linux, настройке и диагностике ПК."
+  },
+  {
+    "id": "modrinth-mods",
+    "name": "Modrinth — Mods",
+    "type": "site",
+    "website": "https://modrinth.com/discover/mods",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://modrinth.com/discover/mods",
+      "reason": "Каталог модов Minecraft; единой версии сервиса нет."
+    },
+    "actions": [
+      {
+        "label": "Моды",
+        "url": "https://modrinth.com/discover/mods"
+      }
+    ],
+    "siteCategory": "Minecraft",
+    "siteSummary": "Каталог модов Minecraft с фильтрами по версиям, загрузчикам и категориям."
+  },
+  {
+    "id": "ficsit-mods",
+    "name": "FICSIT App — Mods",
+    "type": "site",
+    "website": "https://ficsit.app/mods?p=21",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://ficsit.app/mods?p=21",
+      "reason": "Каталог модов Satisfactory; единой версии сервиса нет."
+    },
+    "actions": [
+      {
+        "label": "Моды",
+        "url": "https://ficsit.app/mods?p=21"
+      }
+    ],
+    "siteCategory": "Satisfactory",
+    "siteSummary": "Каталог модов Satisfactory в FICSIT Augmentation Database."
+  },
+  {
+    "id": "gamesvoice",
+    "name": "GamesVoice",
+    "type": "site",
+    "website": "https://www.gamesvoice.ru/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://www.gamesvoice.ru/",
+      "reason": "Сайт студии озвучания и локализации игр; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Библиотека",
+        "url": "https://www.gamesvoice.ru/"
+      }
+    ],
+    "siteCategory": "Игры",
+    "siteSummary": "Студия русской озвучки и локализации видеоигр."
+  },
+  {
+    "id": "ely-traurigerengel",
+    "name": "Ely.by — TraurigerEngel",
+    "type": "site",
+    "website": "https://ely.by/u8471337",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://ely.by/u8471337",
+      "reason": "Персональный профиль Ely.by; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Профиль",
+        "url": "https://ely.by/u8471337"
+      }
+    ],
+    "siteCategory": "Minecraft",
+    "siteSummary": "Профиль TraurigerEngel в системе скинов Ely.by."
+  },
+  {
+    "id": "byrut-games",
+    "name": "BYRUT Games",
+    "type": "site",
+    "website": "https://byrutgame.org/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://byrutgame.org/",
+      "reason": "Каталог ПК-игр и обновлений; единой версии сайта нет."
+    },
+    "actions": [
+      {
+        "label": "Каталог игр",
+        "url": "https://byrutgame.org/"
+      }
+    ],
+    "siteCategory": "Игры",
+    "siteSummary": "Каталог ПК-игр, релизов и обновлений."
+  },
+  {
+    "id": "boosty-fastgoertv",
+    "name": "Boosty — FastGoerTV",
+    "type": "site",
+    "website": "https://boosty.to/fastgoertv",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://boosty.to/fastgoertv",
+      "reason": "Страница автора на Boosty; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Boosty",
+        "url": "https://boosty.to/fastgoertv"
+      }
+    ],
+    "siteCategory": "Подписки",
+    "siteSummary": "Страница FastGoerTV на Boosty с эксклюзивным контентом."
+  },
+  {
+    "id": "pinterest-ru",
+    "name": "Pinterest",
+    "type": "site",
+    "website": "https://ru.pinterest.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://ru.pinterest.com/",
+      "reason": "Веб-сервис визуальных подборок; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Открыть",
+        "url": "https://ru.pinterest.com/"
+      }
+    ],
+    "siteCategory": "Идеи",
+    "siteSummary": "Поиск и сохранение изображений, идей и визуальных подборок."
+  },
+  {
+    "id": "xiaomi-account",
+    "name": "Xiaomi Account",
+    "type": "site",
+    "website": "https://account.xiaomi.com/fe/service/account?userId=4158047622&_locale=en_US",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://account.xiaomi.com/fe/service/account?userId=4158047622&_locale=en_US",
+      "reason": "Персональная страница Xiaomi Account; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Аккаунт",
+        "url": "https://account.xiaomi.com/fe/service/account?userId=4158047622&_locale=en_US"
+      }
+    ],
+    "siteCategory": "Аккаунты",
+    "siteSummary": "Страница Xiaomi Account для указанного профиля."
+  },
+  {
+    "id": "plati-market",
+    "name": "Plati.Market",
+    "type": "site",
+    "website": "https://plati.market/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://plati.market/",
+      "reason": "Маркетплейс цифровых товаров; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Маркетплейс",
+        "url": "https://plati.market/"
+      }
+    ],
+    "siteCategory": "Маркетплейс",
+    "siteSummary": "Площадка цифровых товаров, ключей и услуг."
+  },
+  {
+    "id": "shikimori",
+    "name": "Shikimori",
+    "type": "site",
+    "website": "https://shikimori.io/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://shikimori.io/",
+      "reason": "Энциклопедия аниме и манги; единой версии нет."
+    },
+    "actions": [
+      {
+        "label": "Энциклопедия",
+        "url": "https://shikimori.io/"
+      }
+    ],
+    "siteCategory": "Аниме",
+    "siteSummary": "Энциклопедия аниме и манги с пользовательскими списками."
+  },
+  {
+    "id": "yandex-id",
+    "name": "Яндекс ID",
+    "type": "site",
+    "website": "https://id.yandex.ru/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://id.yandex.ru/",
+      "reason": "Страница управления аккаунтом Яндекса; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Аккаунт",
+        "url": "https://id.yandex.ru/"
+      }
+    ],
+    "siteCategory": "Аккаунты",
+    "siteSummary": "Управление Яндекс ID, профилем и настройками аккаунта."
+  },
+  {
+    "id": "gpu-z",
+    "name": "TechPowerUp GPU-Z",
+    "website": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+    "versionSource": {
+      "sourceId": "download-page",
+      "url": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+      "versionPattern": "(?:TechPowerUp\\s+)?GPU-Z(?:\\s+v?|[^0-9]{0,24})(2\\.\\d+\\.\\d+)",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "2.71.0",
+      "fallbackOnParseMiss": true,
+      "showReleaseDate": false,
+      "reason": "Официальная страница TechPowerUp GPU-Z; версия извлекается со страницы загрузки. Резерв соответствует текущему стабильному выпуску."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.techpowerup.com/download/techpowerup-gpu-z/"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "gopeed",
+    "name": "Gopeed",
+    "website": "https://github.com/GopeedLab/gopeed/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "GopeedLab/gopeed",
+      "fallbackVersion": "1.9.3",
+      "fallbackOnParseMiss": true,
+      "reason": "Официальные GitHub Releases; prerelease/beta ветка 2.0.0 игнорируется до стабильного релиза."
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/GopeedLab/gopeed/releases"
+      }
+    ],
+    "programCategory": "Файлы"
+  },
+  {
+    "id": "hibit-uninstaller",
+    "name": "HiBit Uninstaller",
+    "website": "https://www.hibitsoft.ir/Uninstaller.html",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.hibitsoft.ir/Uninstaller.html",
+      "versionPattern": "HiBit\\s+Uninstaller(?:\\s+v?|[^0-9]{0,24})(\\d+\\.\\d+\\.\\d+)",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "4.0.10",
+      "fallbackOnParseMiss": true,
+      "showReleaseDate": false,
+      "reason": "Официальная страница HiBit Uninstaller публикует текущую версию; fallback используется только если разметка временно не распознаётся."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.hibitsoft.ir/Uninstaller.html"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "winutil",
+    "name": "WinUtil",
+    "website": "https://github.com/ChrisTitusTech/winutil/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ChrisTitusTech/winutil",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){2,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "26.08.19",
+      "fallbackPublishedAt": "2026-08-19T00:00:00.000Z",
+      "fallbackPublishedAtText": "19.08.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ChrisTitusTech/winutil/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "privacy-sexy",
+    "name": "privacy.sexy",
+    "website": "https://github.com/undergroundwires/privacy.sexy/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "undergroundwires/privacy.sexy",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){2,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "0.13.8",
+      "fallbackPublishedAt": "2026-03-13T00:00:00.000Z",
+      "fallbackPublishedAtText": "13.03.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/undergroundwires/privacy.sexy/releases"
+      }
+    ],
+    "programCategory": "Безопасность"
+  },
+  {
+    "id": "dns-jumper",
+    "name": "DNS Jumper",
+    "website": "https://www.sordum.org/7952/dns-jumper-v2-3/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.sordum.org/7952/dns-jumper-v2-3/",
+      "versionPattern": "Dns\\s+Jumper\\s+v?(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "2.3",
+      "fallbackPublishedAt": "2023-11-09T00:00:00.000Z",
+      "fallbackPublishedAtText": "09.11.2023",
+      "showReleaseDate": false,
+      "reason": "Официальная страница Sordum публикует номер DNS Jumper в заголовке."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.sordum.org/7952/dns-jumper-v2-3/"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "anyburn",
+    "name": "AnyBurn",
+    "website": "https://www.anyburn.com/download.htm",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.anyburn.com/download.htm",
+      "versionPattern": "AnyBurn\\s+Free[\\s\\S]{0,160}?V\\s*(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "publishedAtPattern": "AnyBurn\\s+Free[\\s\\S]{0,220}?V\\s*\\d+(?:\\.\\d+){1,3},\\s*Released\\s+on\\s+([A-Za-z]+\\s+\\d{1,2},\\s+\\d{4})",
+      "publishedAtPatternFlags": "i",
+      "publishedAtFormat": "month-name-day-year-comma",
+      "fallbackVersion": "6.9",
+      "fallbackPublishedAt": "2026-07-28T00:00:00.000Z",
+      "fallbackPublishedAtText": "28.07.2026",
+      "reason": "Официальная страница AnyBurn публикует версию и дату AnyBurn Free."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.anyburn.com/download.htm"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "libre-hardware-monitor",
+    "name": "Libre Hardware Monitor",
+    "website": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "LibreHardwareMonitor/LibreHardwareMonitor",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "0.9.6",
+      "fallbackPublishedAt": "2026-02-14T00:00:00.000Z",
+      "fallbackPublishedAtText": "14.02.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "network-profile-name-changer",
+    "name": "Network Profile Name Changer",
+    "website": "https://www.sordum.org/14327/network-profile-name-changer-v1-4/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.sordum.org/14327/network-profile-name-changer-v1-4/",
+      "versionPattern": "Network\\s+Profile\\s+Name\\s+Changer\\s+v?(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "1.4",
+      "fallbackPublishedAt": "2023-09-28T00:00:00.000Z",
+      "fallbackPublishedAtText": "28.09.2023",
+      "showReleaseDate": false,
+      "reason": "Официальная страница Sordum публикует номер версии Network Profile Name Changer."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.sordum.org/14327/network-profile-name-changer-v1-4/"
+      }
+    ],
+    "programCategory": "Сеть"
+  },
+  {
+    "id": "windows-update-blocker",
+    "name": "Windows Update Blocker",
+    "website": "https://www.sordum.org/9470/windows-update-blocker-v1-8/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.sordum.org/9470/windows-update-blocker-v1-8/",
+      "versionPattern": "Windows\\s+Update\\s+Blocker\\s+v?(\\d+(?:\\.\\d+){1,3})",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "fallbackVersion": "1.8",
+      "fallbackPublishedAt": "2023-06-10T00:00:00.000Z",
+      "fallbackPublishedAtText": "10.06.2023",
+      "showReleaseDate": false,
+      "reason": "Официальная страница Sordum публикует номер Windows Update Blocker."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.sordum.org/9470/windows-update-blocker-v1-8/"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "sumatra-pdf",
+    "name": "SumatraPDF",
+    "website": "https://www.sumatrapdfreader.org/download-free-pdf-viewer",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "sumatrapdfreader/sumatrapdf",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(\\d+(?:\\.\\d+){1,3})rel$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "3.6.1",
+      "fallbackPublishedAt": "2026-04-06T00:00:00.000Z",
+      "fallbackPublishedAtText": "06.04.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.sumatrapdfreader.org/download-free-pdf-viewer"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/sumatrapdfreader/sumatrapdf/releases"
+      }
+    ],
+    "programCategory": "Файлы"
+  },
+  {
+    "id": "unigetui",
+    "name": "UniGetUI",
+    "website": "https://github.com/Devolutions/UniGetUI/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Devolutions/UniGetUI",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d{4}\\.\\d+\\.\\d+)$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2026.3.0",
+      "fallbackPublishedAt": "2026-09-14T20:41:52.000Z",
+      "fallbackPublishedAtText": "14.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Devolutions/UniGetUI/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "rufus",
+    "name": "Rufus",
+    "website": "https://rufus.ie/ru/#download",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "pbatard/rufus",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "4.15",
+      "fallbackPublishedAt": "2026-06-30T00:00:00.000Z",
+      "fallbackPublishedAtText": "30.06.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://rufus.ie/ru/#download"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/pbatard/rufus/releases"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "nilesoft-shell",
+    "name": "Nilesoft Shell",
+    "website": "https://nilesoft.org/download",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://nilesoft.org/download",
+      "versionPattern": "Shell\\s+version\\s+(\\d+\\.\\d+\\.\\d+)",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "showReleaseDate": false,
+      "fallbackVersion": "1.9.18",
+      "reason": "Официальная страница Nilesoft Shell публикует номер стабильной версии в блоке Download."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://nilesoft.org/download"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "nanazip",
+    "name": "NanaZip",
+    "website": "https://nanazip.org/downloads/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "M2Team/NanaZip",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "7.0.1832.0",
+      "fallbackPublishedAt": "2026-09-06T00:00:00.000Z",
+      "fallbackPublishedAtText": "06.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://nanazip.org/downloads/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/M2Team/NanaZip/releases"
+      }
+    ],
+    "programCategory": "Файлы"
+  },
+  {
+    "id": "cloudflare-warp",
+    "name": "Cloudflare WARP (1.1.1.1)",
+    "website": "https://one.one.one.one/ru-RU/",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://one.one.one.one/ru-RU/",
+      "reason": "Официальная потребительская страница Cloudflare WARP; публичная версия клиента на ней не является стабильным машинно-читаемым контрактом, поэтому авто-версия отключена.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://one.one.one.one/ru-RU/"
+      }
+    ],
+    "programCategory": "Сеть",
+    "cardSummary": "Клиент Cloudflare для защищённого подключения и маршрутизации трафика через WARP."
+  },
+  {
+    "id": "winscp",
+    "name": "WinSCP",
+    "website": "https://winscp.net/eng/download.php",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://winscp.net/eng/download.php",
+      "versionPattern": "Download\\s+WinSCP\\s+(\\d+\\.\\d+\\.\\d+)(?!\\s+RC)",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "showReleaseDate": false,
+      "fallbackVersion": "6.5.7",
+      "reason": "Официальная страница WinSCP; RC-версии намеренно исключаются."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://winscp.net/eng/download.php"
+      }
+    ],
+    "programCategory": "Файлы"
+  },
+  {
+    "id": "ventoy",
+    "name": "Ventoy",
+    "website": "https://www.ventoy.net/en/download.html",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "ventoy/Ventoy",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "1.1.17",
+      "fallbackPublishedAt": "2026-07-24T00:00:00.000Z",
+      "fallbackPublishedAtText": "24.07.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.ventoy.net/en/download.html"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/ventoy/Ventoy/releases"
+      }
+    ],
+    "programCategory": "Диски"
+  },
+  {
+    "id": "cpu-z",
+    "name": "CPU-Z",
+    "website": "https://www.techpowerup.com/download/cpu-z/?origin=serp_auto",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.cpuid.com/softwares/cpu-z.html",
+      "versionPattern": "Version\\s+(\\d+(?:\\.\\d+){1,3})\\s+for\\s+windows(?:®|&reg;|&#174;)?\\s*x86\\s*/\\s*x64\\b",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "showReleaseDate": false,
+      "fallbackVersion": "3.01",
+      "reason": "Версия Windows x86/x64 определяется только из раздела Classic Versions официальной страницы CPUID. Кнопка Скачать остаётся на TechPowerUp.",
+      "timeoutMs": 6000,
+      "checkTimeoutMs": 10000,
+      "disableCurlFallback": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.techpowerup.com/download/cpu-z/?origin=serp_auto"
+      }
+    ],
+    "programCategory": "Мониторинг"
+  },
+  {
+    "id": "notepad-plus-plus",
+    "name": "Notepad++",
+    "website": "https://notepad-plus-plus.org/downloads/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "notepad-plus-plus/notepad-plus-plus",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "8.9.8.1",
+      "fallbackPublishedAt": "2026-09-24T00:00:00.000Z",
+      "fallbackPublishedAtText": "24.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://notepad-plus-plus.org/downloads/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases"
+      }
+    ],
+    "programCategory": "Разработка"
+  },
+  {
+    "id": "epic-games-store",
+    "name": "Epic Games Store",
+    "type": "site",
+    "website": "https://store.epicgames.com/?lang=en-US",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://store.epicgames.com/?lang=en-US",
+      "reason": "Онлайн-магазин и библиотека игр; версии нет."
+    },
+    "actions": [
+      {
+        "label": "Магазин",
+        "url": "https://store.epicgames.com/?lang=en-US"
+      }
+    ],
+    "siteCategory": "Игры",
+    "siteSummary": "Магазин игр Epic Games, бесплатные раздачи и библиотека аккаунта."
+  },
+  {
+    "id": "python-windows",
+    "name": "Python",
+    "website": "https://www.python.org/downloads/windows/",
+    "versionSource": {
+      "sourceId": "official-page",
+      "url": "https://www.python.org/downloads/windows/",
+      "versionPattern": "Latest\\s+Python\\s+3\\s+Release\\s*(?:[-:–—]|&(?:ndash|mdash|#(?:8211|8212|x201[34]));)?\\s*Python\\s+(\\d+\\.\\d+\\.\\d+)(?![A-Za-z0-9.])",
+      "versionPatternFlags": "i",
+      "versionPick": "highest",
+      "showReleaseDate": false,
+      "fallbackVersion": "3.14.7",
+      "reason": "Официальная Windows-страница Python; берётся поле Latest Python 3 Release, prerelease-секция не используется."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.python.org/downloads/windows/"
+      }
+    ],
+    "programCategory": "Разработка"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "website": "https://nodejs.org/en/download",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://nodejs.org/en/download",
+      "reason": "Официальная страница одновременно публикует Current и несколько LTS-линий; авто-версия отключена, чтобы не выдавать одну ветку за единственно правильную.",
+      "showSource": false
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://nodejs.org/en/download"
+      }
+    ],
+    "programCategory": "Разработка",
+    "cardSummary": "Среда выполнения JavaScript для серверных приложений и инструментов разработки."
+  },
+  {
+    "id": "telegram-desktop",
+    "name": "Telegram Desktop",
+    "website": "https://telegram.org/apps",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "telegramdesktop/tdesktop",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(?:v)?(\\d+(?:\\.\\d+){1,4})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "7.2.9",
+      "fallbackPublishedAt": "2026-09-17T00:00:00.000Z",
+      "fallbackPublishedAtText": "17.09.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://telegram.org/apps"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/telegramdesktop/tdesktop/releases"
+      }
+    ],
+    "programCategory": "Общение"
+  },
+  {
+    "id": "microsoft-activation-scripts",
+    "name": "Microsoft Activation Scripts",
+    "website": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+    "actions": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/massgravel/Microsoft-Activation-Scripts?tab=readme-ov-file#download--how-to-use-it"
+      }
+    ],
+    "programCategory": "Система",
+    "cardSummary": "Проект скриптов активации Windows/Office и диагностики лицензирования."
+  },
+  {
+    "id": "losslesscut",
+    "name": "LosslessCut",
+    "website": "https://github.com/mifi/lossless-cut/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "mifi/lossless-cut",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,3})(?:[-_].*)?$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "3.69.0",
+      "fallbackPublishedAt": "2026-06-04T00:00:00.000Z",
+      "fallbackPublishedAtText": "04.06.2026"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/mifi/lossless-cut/releases"
+      }
+    ],
+    "programCategory": "Мультимедиа"
+  },
+  {
+    "id": "animeon",
+    "name": "AnimeOn",
+    "website": "https://animeon.cc/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://animeon.cc/",
+      "reason": "Веб-сервис; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть",
+        "url": "https://animeon.cc/"
+      }
+    ],
+    "siteCategory": "Аниме",
+    "siteSummary": "Онлайн-каталог и просмотр аниме."
+  },
+  {
+    "id": "watch2gether",
+    "name": "Watch2Gether",
+    "website": "https://w2g.tv/ru/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://w2g.tv/ru/",
+      "reason": "Веб-сервис совместного просмотра; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Комната",
+        "url": "https://w2g.tv/ru/"
+      }
+    ],
+    "siteCategory": "Видео",
+    "siteSummary": "Совместный просмотр видео в синхронизированной комнате."
+  },
+  {
+    "id": "rutracker",
+    "name": "RuTracker",
+    "website": "https://rutracker.org/forum/index.php",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://rutracker.org/forum/index.php",
+      "reason": "Форум и каталог раздач; единой публичной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Форум",
+        "url": "https://rutracker.org/forum/index.php"
+      }
+    ],
+    "siteCategory": "Каталог",
+    "siteSummary": "Тематический форум и торрент-трекер с каталогом раздач."
+  },
+  {
+    "id": "twitch-channel-points-miner-v2",
+    "name": "Twitch Channel Points Miner v2",
+    "website": "https://github.com/rdavydov/Twitch-Channel-Points-Miner-v2/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "rdavydov/Twitch-Channel-Points-Miner-v2",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.0.7",
+      "fallbackPublishedAt": "2026-07-16T10:49:38Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/rdavydov/Twitch-Channel-Points-Miner-v2/releases"
+      }
+    ],
+    "programCategory": "Игры"
+  },
+  {
+    "id": "exifcleaner",
+    "name": "ExifCleaner",
+    "website": "https://github.com/szTheory/exifcleaner/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "szTheory/exifcleaner",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "4.5.0",
+      "fallbackPublishedAt": "2026-09-29T02:02:55Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/szTheory/exifcleaner/releases"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "nomacs",
+    "name": "nomacs",
+    "website": "https://github.com/nomacs/nomacs/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "nomacs/nomacs",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "3.22.4",
+      "fallbackPublishedAt": "2026-10-01T13:03:05Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/nomacs/nomacs/releases"
+      }
+    ],
+    "programCategory": "Изображения"
+  },
+  {
+    "id": "optimizerduck",
+    "name": "optimizerDuck",
+    "website": "https://github.com/itsfatduck/optimizerDuck/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "itsfatduck/optimizerDuck",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2.29.0",
+      "fallbackPublishedAt": "2026-10-07T14:36:52Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/itsfatduck/optimizerDuck/releases"
+      }
+    ],
+    "programCategory": "Система"
+  },
+  {
+    "id": "ludusavi",
+    "name": "Ludusavi",
+    "website": "https://github.com/mtkennerly/ludusavi/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "mtkennerly/ludusavi",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "0.31.0",
+      "fallbackPublishedAt": "2026-04-04T20:56:28Z"
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/mtkennerly/ludusavi/releases"
+      }
+    ],
+    "programCategory": "Игры"
+  },
+  {
+    "id": "simplewall",
+    "name": "simplewall",
+    "website": "https://github.com/henrypp/simplewall/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "henrypp/simplewall",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v\\.(\\d+(?:\\.\\d+){1,4})$",
+        "includePrerelease": false
+      }
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/henrypp/simplewall/releases"
+      }
+    ],
+    "programCategory": "Сеть",
+    "cardSummary": "Управление сетевой активностью приложений и правилами брандмауэра Windows."
+  },
+  {
+    "id": "betterstack-monitors",
+    "name": "Better Stack Monitors",
+    "type": "site",
+    "website": "https://incidents.betterstack.com/team/t609927/monitors/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://incidents.betterstack.com/team/t609927/monitors/",
+      "reason": "Личный кабинет мониторинга, публичной версии нет."
+    },
+    "actions": [
+      {
+        "label": "Мониторы",
+        "url": "https://incidents.betterstack.com/team/t609927/monitors/"
+      }
+    ],
+    "siteCategory": "Мониторинг",
+    "siteSummary": "Мониторинг доступности сервисов и уведомления об инцидентах."
+  },
+  {
+    "id": "render-dashboard",
+    "name": "Render Dashboard",
+    "type": "site",
+    "website": "https://dashboard.render.com/web/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://dashboard.render.com/web/",
+      "reason": "Личный кабинет управления веб-сервисами, публичной версии нет."
+    },
+    "actions": [
+      {
+        "label": "Панель",
+        "url": "https://dashboard.render.com/web/"
+      }
+    ],
+    "siteCategory": "Сервисы",
+    "siteSummary": "Управление веб-сервисами и развертываниями Render."
+  }
+]

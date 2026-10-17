@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Only the main local application webview. No filesystem, shell, or HTTP plugins are exposed to JS.",
+  "windows": ["main"],
+  "permissions": ["core:default", "core:window:allow-start-dragging"]
+}
