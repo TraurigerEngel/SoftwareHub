@@ -1,4 +1,4 @@
-# Software Hub v0.7.3 Stable packaging (PowerShell 5.1-compatible).
+# Software Hub v0.7.4 Stable packaging (PowerShell 5.1-compatible).
 if (Test-Path -LiteralPath (Join-Path $PSScriptRoot '.VISUAL_PREVIEW_ONLY')) {
     throw 'Visual Preview 12 cannot be packaged as a Stable release.'
 }
@@ -37,20 +37,20 @@ $root = $PSScriptRoot
 Assert (Test-Path -LiteralPath (Join-Path $root '.SOFTWARE_HUB_STABLE_SOURCE') -PathType Leaf) 'Not an approved isolated Stable source.'
 Assert (-not (Test-Path -LiteralPath (Join-Path $root '.VISUAL_PREVIEW_ONLY'))) 'Refusing to package Preview as Stable.'
 Assert (-not (Test-Path -LiteralPath (Join-Path $root '.SOFTWARE_HUB_RC_ONLY'))) 'Refusing to package RC as Stable.'
-$version = '0.7.3'
+$version = '0.7.4'
 $pkg = Get-Content -LiteralPath (Join-Path $root 'package.json') -Raw | ConvertFrom-Json
 Assert ($pkg.version -eq $version) 'Stable package version mismatch.'
 $releaseRoot = Join-Path $root 'Release'
 Assert (Test-Path -LiteralPath $releaseRoot -PathType Container) 'Release directory missing.'
 $releases = @(Get-ChildItem -LiteralPath $releaseRoot -Directory |
-    Where-Object { $_.Name -match '^Software_Hub_Tauri_v0\.7\.3_Stable_\d{8}-\d{6}$' } |
+    Where-Object { $_.Name -match '^Software_Hub_Tauri_v0\.7\.4_Stable_\d{8}-\d{6}$' } |
     Sort-Object LastWriteTime -Descending)
-Assert ($releases.Count -eq 1) 'Expected exactly one v0.7.3 Stable release folder (no ambiguous selection).'
+Assert ($releases.Count -eq 1) 'Expected exactly one v0.7.4 Stable release folder (no ambiguous selection).'
 $release = $releases[0]
 $verifier = Join-Path $root 'scripts\verify-release-candidate.cjs'
 VerifyRelease $verifier $release.FullName
 $manifest = Get-Content -LiteralPath (Join-Path $release.FullName 'RELEASE-MANIFEST.json') -Raw | ConvertFrom-Json
-Assert ($manifest.version -eq $version -and $manifest.releaseChannel -eq 'stable') 'Manifest is not v0.7.3 Stable.'
+Assert ($manifest.version -eq $version -and $manifest.releaseChannel -eq 'stable') 'Manifest is not v0.7.4 Stable.'
 Assert ((FileHash (Join-Path $release.FullName 'SoftwareHub.exe')) -eq $manifest.executable.sha256) 'Stable EXE hash mismatch.'
 
 # Include every build input and every visual CSS/icon source, not only the pre-Preview frontend files.
@@ -61,7 +61,7 @@ foreach ($name in $top) { Assert (Test-Path -LiteralPath (Join-Path $root $name)
 foreach ($name in $dirs) { Assert (Test-Path -LiteralPath (Join-Path $root $name) -PathType Container) ('Missing source folder: ' + $name) }
 
 $artifactParent = Join-Path $root 'Artifacts'
-$artifactName = 'Software_Hub_v0.7.3_Stable'
+$artifactName = 'Software_Hub_v0.7.4_Stable'
 $artifact = Join-Path $artifactParent $artifactName
 Assert (-not (Test-Path -LiteralPath $artifact)) 'Stable output already exists; will not overwrite.'
 $tmp = Join-Path $env:TEMP ('shub-stable-pack-'+[guid]::NewGuid().ToString('N'))
@@ -120,7 +120,7 @@ try {
     Assert (-not (Test-Path -LiteralPath $artifact)) 'Stable artifact directory appeared during packaging; refusing overwrite.'
     Move-Item -LiteralPath $stagingResult -Destination $artifact
     Write-Host ''
-    Write-Host 'SOFTWARE HUB v0.7.2 STABLE ARCHIVES VERIFIED' -ForegroundColor Green
+    Write-Host 'SOFTWARE HUB v0.7.4 STABLE ARCHIVES VERIFIED' -ForegroundColor Green
     Write-Host ('Stable EXE SHA-256: '+$manifest.executable.sha256)
     Write-Host ('Portable ZIP: '+(Join-Path $artifact ($artifactName+'_Portable.zip')))
     Write-Host ('Portable ZIP SHA-256: '+$portableSha)

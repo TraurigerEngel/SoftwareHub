@@ -11,14 +11,14 @@ const windowConfig = config.app.windows[0];
 const html = read('web/index.html');
 const bridge = read('web/bridge.js');
 
-// The maximized frameless window must not expose native resize handles at the
-// screen edges. CSS cursor overrides would only hide the cursor, not stop resize.
-test('window disables native edge resizing but still maximizes to work area', () => {
+// Real work-area sizing exposes the desktop bottom edge for Explorer.
+// CSS padding alone would not expose the taskbar hover trigger.
+test('window disables resizing and uses native work-area sizing with bottom gap', () => {
   assert.equal(windowConfig.resizable, false, 'disable Windows native sizing hit zones');
-  assert.equal(windowConfig.maximized, true, 'retain real maximized startup');
+  assert.equal(windowConfig.maximized, true, 'native maximization is startup only; Win32 compatibility unmaximizes auto-hide taskbar monitors');
   assert.equal(windowConfig.decorations, false, 'retain custom centered titlebar');
   assert.notEqual(windowConfig.fullscreen, true, 'do not cover Windows taskbar');
-  assert.equal(windowConfig.visible, true, 'preserve proven splash sequence');
+  assert.equal(windowConfig.visible, false, 'show only after native work-area geometry is applied');
 });
 
 test('window keeps exactly minimize and close controls; no resize/maximize button', () => {

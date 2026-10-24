@@ -1,8 +1,8 @@
 {
   "name": "software-hub-tauri",
   "private": true,
-  "version": "0.7.3",
-  "description": "Software Hub v0.7.3 Stable - improved launch splash, portable Windows x64 (Tauri + WebView2)",
+  "version": "0.7.4",
+  "description": "Software Hub v0.7.4 Stable - Security and Manual Refresh, Windows x64 portable (Tauri + WebView2)",
   "scripts": {
     "verify": "node scripts/verify-preview.js && node --test tests/*.test.cjs",
     "build:web": "node scripts/stage-fonts.cjs",

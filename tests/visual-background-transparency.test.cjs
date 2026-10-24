@@ -33,5 +33,5 @@ test('Visual Preview 2 preserves catalog, native window, release flow and approv
   assert.match(css, /transition: opacity 480ms ease-in-out 1250ms, visibility 0s linear 1730ms;/);
   assert.doesNotMatch(preview2, /startup-(?:screen|panel)|data-startup/);
   assert.match(read('MAKE-RELEASE.cmd'), /publish:release/);
-  assert.equal(JSON.parse(read('src-tauri/tauri.conf.json')).app.windows[0].visible, true);
+  assert.equal(JSON.parse(read('src-tauri/tauri.conf.json')).app.windows[0].visible, false);
 });

@@ -69,7 +69,7 @@ test('VP10 motion and contrast preferences are respected without a heavy per-car
 test('VP10 cannot be accidentally published with the v0.7.1 Stable scripts', () => {
   const marker = fs.existsSync(path.join(root,'.VISUAL_PREVIEW_ONLY'));
   const isRc = fs.existsSync(path.join(root,'.SOFTWARE_HUB_RC_ONLY')) && JSON.parse(read('package.json')).version === '0.7.2-rc.1';
-  const isStable = fs.existsSync(path.join(root,'.SOFTWARE_HUB_STABLE_SOURCE')) && ['0.7.2','0.7.3'].includes(JSON.parse(read('package.json')).version);
+  const isStable = fs.existsSync(path.join(root,'.SOFTWARE_HUB_STABLE_SOURCE')) && ['0.7.2','0.7.3','0.7.4'].includes(JSON.parse(read('package.json')).version);
   assert.ok(marker || isRc || isStable, 'Only isolated Preview or RC sources allowed');
   assert.match(read('MAKE-RELEASE.cmd'), /if exist "\.VISUAL_PREVIEW_ONLY"/);
   assert.match(read('scripts/publish-release.cjs'), /if \(fs\.existsSync\(path\.join\(rootDir, '\.VISUAL_PREVIEW_ONLY'\)\)\)/);

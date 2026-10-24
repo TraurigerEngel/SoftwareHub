@@ -752,25 +752,6 @@ async function checkVersions({ connectivityChecked = false, programIds = null, b
   }
 }
 
-async function startupVersionRefresh() {
-  try {
-    const staleIds = await window.softwareHub.getStartupRefreshIds();
-    if (!Array.isArray(staleIds) || !staleIds.length) return;
-    await checkVersions({ programIds: staleIds, background: true });
-  } catch {
-    // Startup refresh is best-effort; cached data is already rendered.
-  }
-}
-
-function scheduleStartupVersionRefresh() {
-  const run = () => { void startupVersionRefresh(); };
-  if (typeof window.requestIdleCallback === 'function') {
-    window.requestIdleCallback(run, { timeout: 1800 });
-  } else {
-    setTimeout(run, 900);
-  }
-}
-
 function setupPageDragScrolling() {
   const grid = el('grid');
   if (!grid) return;
@@ -817,7 +798,7 @@ function disableContextMenuAndSelection() {
 function revealInitialCatalog() {
   requestAnimationFrame(() => {
     document.documentElement.dataset.startup = 'ready';
-    scheduleStartupVersionRefresh();
+    // Online version checks are manual: only the Refresh button initiates them.
   });
 }
 

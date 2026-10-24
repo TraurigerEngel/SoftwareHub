@@ -25,12 +25,12 @@ test('Kinoteka-like titlebar has centered brand and only minimize/close buttons'
   assert.match(parity, /\.window-controls button:hover,[\s\S]*?opacity:\s*1;/);
 });
 
-test('native desktop window starts maximized with normal taskbar and working close/minimize', () => {
+test('native desktop window fits work area with a bottom taskbar gap', () => {
   const win = config.app.windows[0];
   assert.equal(win.maximized, true);
   assert.equal(win.decorations, false);
-  assert.notEqual(win.fullscreen, true, 'maximized is not exclusive fullscreen');
-  assert.equal(win.visible, true, 'keep proven splash and first paint behavior');
+  assert.notEqual(win.fullscreen, true, 'do not cover the Windows shell');
+  assert.equal(win.visible, false, 'show after safe window sizing');
   assert.match(bridge, /\['windowMinimize','minimize_window'\]/);
   assert.match(bridge, /\['windowClose','close_window'\]/);
   assert.doesNotMatch(bridge, /\['windowMaximize','toggle_maximize_window'\]/);

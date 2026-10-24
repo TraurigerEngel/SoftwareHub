@@ -10,7 +10,7 @@ const { createReleaseArtifacts } = require('../scripts/publish-release.cjs');
 const root = path.resolve(__dirname, '..');
 
 test('Hotfix 004 creates an isolated RC1 with consistent versions and no Preview marker', () => {
-  if (JSON.parse(fs.readFileSync(path.join(root,'package.json'))).version === '0.7.2' || JSON.parse(fs.readFileSync(path.join(root,'package.json'))).version === '0.7.3') {
+  if (JSON.parse(fs.readFileSync(path.join(root,'package.json'))).version === '0.7.2' || JSON.parse(fs.readFileSync(path.join(root,'package.json'))).version === '0.7.3' || JSON.parse(fs.readFileSync(path.join(root,'package.json'))).version === '0.7.4') {
     assert.ok(fs.existsSync(path.join(root,'.SOFTWARE_HUB_STABLE_SOURCE')));
     assert.ok(!fs.existsSync(path.join(root,'.SOFTWARE_HUB_RC_ONLY')));
     assert.ok(!fs.existsSync(path.join(root,'.VISUAL_PREVIEW_ONLY')));

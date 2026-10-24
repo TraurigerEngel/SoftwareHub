@@ -2463,13 +2463,13 @@
     "website": "https://winscp.net/eng/download.php",
     "versionSource": {
       "sourceId": "official-page",
-      "url": "https://winscp.net/eng/download.php",
-      "versionPattern": "Download\\s+WinSCP\\s+(\\d+\\.\\d+\\.\\d+)(?!\\s+RC)",
+      "url": "https://winscp.net/eng/docs/history",
+      "versionPattern": "\\b(6\\.\\d+(?:\\.\\d+)?)\\s+20\\d{2}-\\d{2}-\\d{2}",
       "versionPatternFlags": "i",
       "versionPick": "highest",
       "showReleaseDate": false,
-      "fallbackVersion": "6.5.7",
-      "reason": "Официальная страница WinSCP; RC-версии намеренно исключаются."
+      "fallbackVersion": "6.7",
+      "reason": "Официальная история выпусков WinSCP; незавершённые и RC-релизы исключены."
     },
     "actions": [
       {

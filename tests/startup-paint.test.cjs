@@ -78,7 +78,7 @@ const settle = async () => { await Promise.resolve(); await Promise.resolve(); a
 
 test('static first paint hides only unfinished catalog, not window controls', () => {
   const config = JSON.parse(source('src-tauri/tauri.conf.json'));
-  assert.equal(config.app.windows[0].visible, true);
+  assert.equal(config.app.windows[0].visible, false, 'show after native work-area sizing');
   assert.match(html, /<html lang="ru" data-startup="loading">/);
   assert.ok(html.indexOf('id="startupScreen"') < html.indexOf('class="app-shell"'));
   assert.match(css, /html\[data-startup="loading"\] \.app-shell\s*\{\s*visibility:\s*hidden/);

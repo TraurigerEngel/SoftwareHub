@@ -7,7 +7,7 @@ function assert(cond, message) { if (!cond) throw new Error(message); }
 const pkg = JSON.parse(read('package.json'));
 const tauriConfig = JSON.parse(read('src-tauri/tauri.conf.json'));
 const cargoVersion = read('src-tauri/Cargo.toml').match(/^version\s*=\s*"([^"]+)"/m)?.[1];
-assert(['0.7.1', '0.7.2-rc.1', '0.7.2', '0.7.3'].includes(pkg.version) && tauriConfig.version === pkg.version && cargoVersion === pkg.version,
+assert(['0.7.1', '0.7.2-rc.1', '0.7.2', '0.7.3', '0.7.4'].includes(pkg.version) && tauriConfig.version === pkg.version && cargoVersion === pkg.version,
   'Stable source version must be consistent across npm, Cargo and Tauri');
 const lockPath = path.join(root, 'package-lock.json');
 if (fs.existsSync(lockPath)) {
