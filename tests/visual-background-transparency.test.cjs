@@ -28,7 +28,7 @@ test('Visual Preview 2 keeps cards and controls translucent with a readable filt
 });
 
 test('Visual Preview 2 preserves catalog, native window, release flow and approved splash timing', () => {
-  assert.equal(JSON.parse(read('data/programs.json')).length, 126);
+  assert.equal(JSON.parse(read('data/programs.json')).length, 141);
   assert.match(css, /transition: opacity 200ms ease-in-out 1000ms;/);
   assert.match(css, /transition: opacity 480ms ease-in-out 1250ms, visibility 0s linear 1730ms;/);
   assert.doesNotMatch(preview2, /startup-(?:screen|panel)|data-startup/);

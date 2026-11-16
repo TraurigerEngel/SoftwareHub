@@ -7,7 +7,7 @@ function assert(cond, message) { if (!cond) throw new Error(message); }
 const pkg = JSON.parse(read('package.json'));
 const tauriConfig = JSON.parse(read('src-tauri/tauri.conf.json'));
 const cargoVersion = read('src-tauri/Cargo.toml').match(/^version\s*=\s*"([^"]+)"/m)?.[1];
-assert(['0.7.1', '0.7.2-rc.1', '0.7.2', '0.7.3', '0.7.4'].includes(pkg.version) && tauriConfig.version === pkg.version && cargoVersion === pkg.version,
+assert(['0.7.1', '0.7.2-rc.1', '0.7.2', '0.7.3', '0.7.4', '0.7.5'].includes(pkg.version) && tauriConfig.version === pkg.version && cargoVersion === pkg.version,
   'Stable source version must be consistent across npm, Cargo and Tauri');
 const lockPath = path.join(root, 'package-lock.json');
 if (fs.existsSync(lockPath)) {
@@ -17,9 +17,9 @@ if (fs.existsSync(lockPath)) {
 }
 const programs = JSON.parse(read('data/programs.json'));
 const sources = JSON.parse(read('data/sources.json'));
-assert(programs.length === 126, 'Expected 126 catalog entries after removing ZStartup and BetterTrumpet');
+assert(programs.length === 141, 'Expected 141 catalog entries after removing ZStartup and BetterTrumpet');
 assert(Object.keys(sources).length === 9, 'Expected 9 untouched version source definitions');
-assert(programs.filter(p => p.type === 'site').length === 40, 'Expected 40 sites');
+assert(programs.filter(p => p.type === 'site').length === 49, 'Expected 49 sites');
 assert(programs.find(p => p.id === 'cpu-z')?.website?.includes('techpowerup.com'), 'CPU-Z TechPowerUp routing changed');
 assert(programs.find(p => p.id === 'atk-hub')?.versionSource == null, 'ATK HUB metadata changed');
 const visualCpp = programs.find(p => p.id === 'visualcpp');
@@ -34,4 +34,4 @@ const bridge = read('web/bridge.js');
 for (const command of ['get_catalog','get_version_cache','set_version_cache','check_version','get_startup_refresh_ids','open_external','copy_catalog_text','is_internet_available']) {
   assert(bridge.includes(`'${command}'`) && read('src-tauri/src/lib.rs').includes(`fn ${command}`), `Missing bridge/backend pair: ${command}`);
 }
-console.log('SOFTWARE HUB SOURCE VERIFY OK: 126 cards, 40 sites, 9 sources, 8 IPC pairs, no Electron dependency');
+console.log('SOFTWARE HUB SOURCE VERIFY OK: 141 cards, 49 sites, 9 sources, 8 IPC pairs, no Electron dependency');

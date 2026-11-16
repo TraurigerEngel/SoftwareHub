@@ -19,7 +19,7 @@ test('only RTSS tries official HTML without a rendered WebView', () => {
 });
 
 test('the actual official source URLs and download buttons remain untouched', () => {
-  assert.equal(programs.length,126);
+  assert.equal(programs.length,141);
   assert.equal(find('rtss').versionSource.renderedPageUrl, 'https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/');
   assert.equal(find('visualcpp').versionSource.renderedPageUrl, undefined);
   assert.equal(find('rtss').actions[0].url, find('rtss').website);

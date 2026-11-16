@@ -131,7 +131,7 @@ test('previously approved startup timing, catalog and release build remain untou
   assert.match(css, /transition:\s*opacity 200ms ease-in-out 1000ms;/);
   assert.match(css, /transition:\s*opacity 480ms ease-in-out 1250ms, visibility 0s linear 1730ms;/);
   const catalog = JSON.parse(read('data/programs.json'));
-  assert.equal(catalog.length, 126);
+  assert.equal(catalog.length, 141);
 });
 
 

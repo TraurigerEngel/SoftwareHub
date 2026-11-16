@@ -6,9 +6,9 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const read = p => fs.readFileSync(path.join(root,p),'utf8');
 const programs = JSON.parse(read('data/programs.json'));
-test('catalog retains unique ids and exact 126 entries', () => {
-  assert.equal(programs.length, 126);
-  assert.equal(new Set(programs.map(p=>p.id)).size,126);
+test('catalog retains unique ids and exact 141 entries', () => {
+  assert.equal(programs.length, 141);
+  assert.equal(new Set(programs.map(p=>p.id)).size,141);
 });
 test('bridge exposes the same eight methods as old Electron preload', () => {
   const bridge = read('web/bridge.js');

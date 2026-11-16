@@ -25,7 +25,7 @@ test('community manifest is verified twice and never borrows an unverified relea
 });
 
 test('unchanged official vendor download buttons and original sources', () => {
-  assert.equal(catalog.length, 126);
+  assert.equal(catalog.length, 141);
   const byId = Object.fromEntries(catalog.map(p => [p.id, p]));
   const adw = byId.adwcleaner;
   const after = byId.afterburner;
@@ -62,7 +62,7 @@ test('GPU-Z vendor page and download link stay unchanged in catalog', () => {
   assert.equal(item.actions.find(a=>a.label==='Скачать').url, link);
   assert.equal(item.versionSource.fallbackVersion, '2.71.0');
   assert.equal(item.versionSource.showReleaseDate, false);
-  assert.equal(catalog.length, 126);
+  assert.equal(catalog.length, 141);
 });
 
 
@@ -95,5 +95,5 @@ test('NVCleanstall and Visual C++ unchanged; CPU-Z download stays on TechPowerUp
   assert.equal(byId.visualcpp.actions[0].url,byId.visualcpp.website);
   assert.doesNotMatch(lib, /"cpu-z"\s*=>\s*Some\(\("manifests\//);
   assert.doesNotMatch(lib, /"visualcpp"\s*=>\s*Some\(\("manifests\//);
-  assert.equal(catalog.length,126);
+  assert.equal(catalog.length,141);
 });

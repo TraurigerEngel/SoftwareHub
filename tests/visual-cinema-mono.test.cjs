@@ -28,7 +28,7 @@ test('Cinema Mono preview retains the approved startup transition timings unchan
 });
 
 test('Cinema Mono preview retains catalog and renderer functional contracts', () => {
-  assert.equal(catalog.length, 126);
+  assert.equal(catalog.length, 141);
   assert.match(baseline, /requestAnimationFrame/);
   assert.equal(JSON.parse(source('src-tauri/tauri.conf.json')).app.windows[0].title, 'Software Hub');
 });

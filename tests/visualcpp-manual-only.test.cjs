@@ -20,9 +20,9 @@ test('Visual C++ skips network checks and hides version/source without changing 
   assert.equal(p.versionSource.showSource, false);
   assert.equal(p.website,'https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/');
   assert.deepEqual(p.actions,[{label:'Скачать',url:p.website}]);
-  assert.equal(programs.length,126);
-  assert.equal(programs.filter(x=>x.type==='site').length,40);
-  assert.equal(programs.filter(x=>x.type!=='site').length,86);
+  assert.equal(programs.length,141);
+  assert.equal(programs.filter(x=>x.type==='site').length,49);
+  assert.equal(programs.filter(x=>x.type!=='site').length,92);
   assert.doesNotMatch(rust, /matches!\(field\(p, "id"\), "rtss" \| "visualcpp"\)/);
   assert.doesNotMatch(rust.slice(0, rust.indexOf('#[cfg(test)]')), /field\(p, "id"\) == "visualcpp"/);
 });

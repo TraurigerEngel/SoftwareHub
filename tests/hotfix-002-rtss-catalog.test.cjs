@@ -10,11 +10,11 @@ const byId = Object.fromEntries(catalog.map(p=>[p.id,p]));
 const rust = read('src-tauri/src/lib.rs');
 
 test('Hotfix 002 adds three unique cards without disturbing existing catalog',()=>{
-  assert.equal(catalog.length,126);
-  assert.equal(new Set(catalog.map(p=>p.id)).size,126);
-  assert.equal(catalog.filter(p=>p.type==='site').length,40);
-  assert.equal(catalog.filter(p=>p.type!=='site').length,86);
-  assert.equal(catalog.filter(p=>p.versionSource?.sourceId==='github-releases').length,45);
+  assert.equal(catalog.length,141);
+  assert.equal(new Set(catalog.map(p=>p.id)).size,141);
+  assert.equal(catalog.filter(p=>p.type==='site').length,49);
+  assert.equal(catalog.filter(p=>p.type!=='site').length,92);
+  assert.equal(catalog.filter(p=>p.versionSource?.sourceId==='github-releases').length,47);
 });
 test('simplewall automatically checks stable GitHub Releases, ignoring beta tags',()=>{
   const p=byId.simplewall;

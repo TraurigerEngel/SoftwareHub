@@ -25,7 +25,7 @@ function matchDate(text) {
 }
 
 test('Java 8 metadata is taken from the official public update page; download button stays original', () => {
-  assert.equal(programs.length, 126);
+  assert.equal(programs.length, 141);
   assert.equal(source.sourceId, 'official-page');
   assert.equal(source.url, 'https://www.java.com/en/download/java8_update.jsp');
   assert.deepEqual(source.urls, [source.url]);

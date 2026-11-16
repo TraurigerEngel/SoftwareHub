@@ -1,23 +1,25 @@
 # Software Hub 🚀
 
-**v0.7.4 Stable — Security & Manual Refresh** · Windows 11 x64 · Tauri 2 / Rust · Portable.
+**v0.7.5 Stable — Catalog Expansion (141 Cards)** · Windows 11 x64 · Tauri 2 / Rust · Portable.
 
 **Software Hub** — каталог программ и полезных сайтов с поиском, фильтрами, ссылками на официальные источники и ручной проверкой новых версий. Тёмный интерфейс Cinema Mono, фиолетово-розовые акценты и анимированные частицы.
 
-[**Скачать v0.7.4**](https://github.com/TraurigerEngel/SoftwareHub/releases/tag/v0.7.4) · [Описание изменений](RELEASE_NOTES_RU.md) · [Конфиденциальность](GITHUB_PRIVACY_RU.md)
+[**Релизы**](https://github.com/TraurigerEngel/SoftwareHub/releases) · [Описание изменений](RELEASE_NOTES_RU.md) · [Конфиденциальность](GITHUB_PRIVACY_RU.md)
 
 ## Возможности
 
-- 126 карточек: 86 программ и 40 сайтов.
+- 141 карточка: 92 программы и 49 сайтов (в этом обновлённом архиве исходников).
 - Поиск, категории, страницы и официальные ссылки.
 - Проверка версий **только после нажатия «Обновить версии»**. При запуске отображается сохранённый кеш; автоматических проверок нет.
 - Доступные версии и журнал диагностики без сохранения полученных HTML-страниц и личных токенов.
 - Проверка HTTPS в Rust с обновлёнными `rustls-webpki 0.103.16` и `webpki-roots 1.0.10`.
 - Портативная папка `portable-data`; персональные данные остаются локально.
 
+> **v0.7.5** расширяет каталог на базе опубликованной v0.7.4 без изменения UI, Rust-кода и логики ручной проверки версий. 141 карточка, список — [CATALOG_UPDATE_RU.md](CATALOG_UPDATE_RU.md).
+
 ## Установка
 
-1. Скачайте `Software_Hub_v0.7.4_Stable_Portable.zip` в разделе Assets GitHub Release.
+1. Скачайте `Software_Hub_v0.7.5_Stable_Portable.zip` в разделе Assets GitHub Release.
 2. Распакуйте ZIP в отдельную папку.
 3. Запустите `SoftwareHub.exe` рядом с пустой папкой `portable-data`. Нужен **Microsoft WebView2 Runtime**.
 
@@ -38,7 +40,8 @@ cargo test --manifest-path .\src-tauri\Cargo.toml --locked --lib
 
 ## Документы
 
-- [RELEASE_NOTES_RU.md](RELEASE_NOTES_RU.md) — изменения v0.7.4.
+- [RELEASE_NOTES_RU.md](RELEASE_NOTES_RU.md) — изменения v0.7.5.
+- [BUILD_AND_RELEASE_RU.md](BUILD_AND_RELEASE_RU.md) — локальная сборка и GitHub Release.
 - [RELEASE_CHECKLIST_RU.md](RELEASE_CHECKLIST_RU.md) — контрольный список публикации.
 - [GITHUB_PRIVACY_RU.md](GITHUB_PRIVACY_RU.md) — правила для приватных данных.
 - [LICENSE](LICENSE) — MIT License для оригинального кода.

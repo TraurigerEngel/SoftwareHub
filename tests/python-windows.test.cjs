@@ -9,7 +9,7 @@ const lib = fs.readFileSync(path.join(root, 'src-tauri/src/lib.rs'), 'utf8');
 const python = programs.find(p => p.id === 'python-windows');
 
 test('Python checker stays on official Windows stable-release header without changing download links', () => {
-  assert.equal(programs.length, 126);
+  assert.equal(programs.length, 141);
   assert.equal(python.website, 'https://www.python.org/downloads/windows/');
   assert.equal(python.versionSource.url, python.website);
   assert.equal(python.versionSource.fallbackVersion, '3.14.7'); // unverified fallback must not be raised manually

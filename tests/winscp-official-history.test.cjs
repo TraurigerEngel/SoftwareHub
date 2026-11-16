@@ -6,7 +6,7 @@ const path=require('node:path');
 const programs=JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','programs.json'),'utf8'));
 const win=programs.find(p=>p.id==='winscp');
 test('WinSCP checks official history and keeps original download',()=>{
- assert.equal(programs.length,126);
+ assert.equal(programs.length,141);
  assert.equal(win.website,'https://winscp.net/eng/download.php');
  assert.deepEqual(win.actions,[{label:'Скачать',url:'https://winscp.net/eng/download.php'}]);
  assert.equal(win.versionSource.url,'https://winscp.net/eng/docs/history');

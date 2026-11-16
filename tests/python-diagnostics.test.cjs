@@ -18,7 +18,7 @@ test('Diagnostic outputs are constant labels, not a saved copy of source HTML or
   for (const label of ['python-page-access-challenge', 'python-header-present-pattern-miss',
     'python-stable-section-without-header', 'python-windows-page-unexpected-layout',
     'python-unexpected-response', 'python-empty-response']) assert.ok(rust.includes('"' + label + '"'));
-  assert.equal(programs.length, 126);
+  assert.equal(programs.length, 141);
   const python = programs.find(p => p.id === 'python-windows');
   assert.equal(python.versionSource.url, 'https://www.python.org/downloads/windows/');
   assert.equal(python.versionSource.fallbackVersion, '3.14.7');

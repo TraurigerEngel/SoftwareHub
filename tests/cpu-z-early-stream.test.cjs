@@ -22,5 +22,5 @@ test('CPU-Z uses a bounded early-stop reader isolated from other official-page s
   assert.match(p.versionSource.versionPattern,/x86/);
   assert.match(p.versionSource.versionPattern,/x64/);
   assert.equal(p.actions[0].url,'https://www.techpowerup.com/download/cpu-z/?origin=serp_auto');
-  assert.equal(catalog.length,126);
+  assert.equal(catalog.length,141);
 });

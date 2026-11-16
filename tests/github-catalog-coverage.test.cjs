@@ -35,7 +35,8 @@ const previouslyKnownTags = {
   'unigetui':['v2026.3.1'], 'rufus':['v4.15'], 'nanazip':['7.0.1843.0'],
   'ventoy':['v1.1.17'], 'notepad-plus-plus':['v8.9.8.1'],
   'telegram-desktop':['v7.2.9'],
-  'losslesscut':['v3.69.0'], 'simplewall':['v.3.8.7']
+  'losslesscut':['v3.69.0'], 'simplewall':['v.3.8.7'],
+  'win11debloat':['2026.10.30'], 'localsend':['v1.18.2']
 };
 
 test('five new GitHub projects use their exact releases URLs, verified tag formats and automatic checker',()=>{
@@ -50,16 +51,16 @@ test('five new GitHub projects use their exact releases URLs, verified tag forma
     assert.ok(new RegExp(p.versionSource.releasePolicy.versionPattern,'i').test(tag),id);
     assert.equal(sources[p.versionSource.sourceId].adapter,'github-releases',id);
   }
-  assert.equal(catalog.length,126);
-  assert.equal(catalog.filter(p=>p.type==='site').length,40);
-  assert.equal(catalog.filter(p=>p.type!=='site').length,86);
+  assert.equal(catalog.length,141);
+  assert.equal(catalog.filter(p=>p.type==='site').length,49);
+  assert.equal(catalog.filter(p=>p.type!=='site').length,92);
 });
 
-test('every one of 45 GitHub Releases configurations accepts a real release tag and displays a version',()=>{
+test('every one of 47 GitHub Releases configurations accepts a real release tag and displays a version',()=>{
   const active=catalog.filter(p=>p.versionSource?.sourceId==='github-releases');
-  assert.equal(active.length,45);
-  assert.equal(new Set(active.map(p=>p.versionSource.repo.toLowerCase())).size,45);
-  assert.equal(Object.keys(previouslyKnownTags).length,40);
+  assert.equal(active.length,47);
+  assert.equal(new Set(active.map(p=>p.versionSource.repo.toLowerCase())).size,47);
+  assert.equal(Object.keys(previouslyKnownTags).length,42);
   for (const p of active) {
     const s=p.versionSource, policy={...sources['github-releases'].defaultPolicy,...s.releasePolicy};
     const sample=previouslyKnownTags[p.id] || (newEntries[p.id] ? [newEntries[p.id][1]] : null);

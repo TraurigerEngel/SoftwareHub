@@ -16,7 +16,7 @@ test('only Python retries official RSS after unrecognized HTML', () => {
   assert.equal(python.website, 'https://www.python.org/downloads/windows/');
   assert.equal(python.versionSource.url, python.website);
   assert.equal(python.versionSource.fallbackVersion, '3.14.7');
-  assert.equal(catalog.length,126);
+  assert.equal(catalog.length,141);
 });
 
 test('RSS only trusts matching official HTTPS stable release title and permalink', () => {

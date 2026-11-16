@@ -1,3 +1,3 @@
-Software Hub v0.7.4 Stable source, Security & Manual Refresh.
-Derived from the verified v0.7.3 Stable baseline.
-Manual refresh only, TLS trust updates, WinSCP official-history fallback and Windows taskbar parity.
+Software Hub v0.7.5 Stable source, Catalog Expansion.
+Based on the published v0.7.4 Stable Security & Manual Refresh.
+Manual version checking, TLS trust, taskbar behavior and Windows UI retained.

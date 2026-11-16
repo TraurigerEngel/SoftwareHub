@@ -25,7 +25,7 @@ test('Hotfix 003: RTSS source label is correctly disclosed; no silent vendor cla
  assert.equal(rtss.website,'https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/');
  assert.equal(rtss.actions[0].url,rtss.website);
  assert.equal(rtss.versionSource.fallbackVersion,'7.3.7');
- assert.equal(catalog.length,126);
+ assert.equal(catalog.length,141);
 });
 
 test('Hotfix 003: old vendor 403 fallback remains intact for other software',()=>{

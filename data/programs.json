@@ -27,19 +27,19 @@
   {
     "id": "adb-appcontrol",
     "name": "ADB AppControl",
-    "website": "https://adb.cybercat.dev/ru/pc/",
+    "website": "https://www.adbappcontrol.com/ru/pc/",
     "versionSource": {
       "sourceId": "official-page",
-      "url": "https://adb.cybercat.dev/ru/pc/",
+      "url": "https://www.adbappcontrol.com/ru/pc/",
       "versionPattern": "Последняя\\s+версия\\s+([0-9]+(?:\\.[0-9]+)+)",
       "versionPatternFlags": "im",
       "showReleaseDate": false,
-      "reason": "Официальная русская страница ADB AppControl PC явно публикует последнюю версию."
+      "reason": "Актуальная официальная русская страница ADB AppControl для Windows публикует последнюю версию. Прежний адрес adb.cybercat.dev больше не используется."
     },
     "actions": [
       {
         "label": "Скачать",
-        "url": "https://adb.cybercat.dev/ru/pc/"
+        "url": "https://www.adbappcontrol.com/ru/pc/"
       }
     ],
     "programCategory": "Android"
@@ -1196,6 +1196,25 @@
     "siteSummary": "Веб-чат и ИИ-ассистент OpenAI."
   },
   {
+    "id": "claude-ai",
+    "name": "Claude",
+    "website": "https://claude.ai/new",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://claude.ai/new",
+      "reason": "Веб-чат Claude; общая версия для проверки не публикуется."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть чат",
+        "url": "https://claude.ai/new"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "ИИ-ассистент Anthropic для общения, программирования и работы с текстами."
+  },
+  {
     "id": "deepseek",
     "name": "DeepSeek",
     "website": "https://chat.deepseek.com/",
@@ -1361,6 +1380,10 @@
       {
         "label": "Тест",
         "url": "https://webcammictest.com/ru/"
+      },
+      {
+        "label": "Главная",
+        "url": "https://webcammictest.com/"
       }
     ],
     "siteCategory": "Тесты",
@@ -1384,6 +1407,44 @@
     ],
     "siteCategory": "Windows",
     "siteSummary": "Генератор autounattend.xml для автоматической установки Windows."
+  },
+  {
+    "id": "unattend-generator-github",
+    "name": "Windows Unattend Generator — GitHub",
+    "website": "https://github.com/rbardtke/windows-unattend-generator",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://github.com/rbardtke/windows-unattend-generator",
+      "reason": "Исходный код веб-генератора без опубликованных GitHub Releases; не проверяем версию автоматически."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rbardtke/windows-unattend-generator"
+      }
+    ],
+    "siteCategory": "Windows",
+    "siteSummary": "Альтернативный открытый генератор autounattend.xml для установки Windows 10/11."
+  },
+  {
+    "id": "artcraft",
+    "name": "ArtCraft",
+    "website": "https://getartcraft.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://getartcraft.com/",
+      "reason": "Портал разных приложений и ИИ-студии; единого номера версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть сайт",
+        "url": "https://getartcraft.com/"
+      }
+    ],
+    "siteCategory": "Дизайн",
+    "siteSummary": "Творческие приложения и ИИ-инструменты для изображений, видео и дизайна."
   },
   {
     "id": "browser-extensions",
@@ -1594,13 +1655,11 @@
     "versionSource": {
       "sourceId": "official-page",
       "url": "https://www.glenn.delahoy.com/snappy-driver-installer-origin/",
-      "versionPattern": "Snappy\\s+Driver\\s+Installer\\s+Origin\\s+Version\\s+(\\d+(?:\\.\\d+){1,3})",
+      "versionPattern": "Snappy\\s+Driver\\s+Installer\\s+Origin\\s+v(\\d+(?:\\.\\d+){1,3})\\b",
       "versionPatternFlags": "i",
       "versionPick": "highest",
-      "fallbackVersion": "2.0.4",
-      "fallbackOnParseMiss": true,
       "showReleaseDate": false,
-      "reason": "Официальная страница загрузки публикует текущую версию приложения отдельно от еженедельных Driver Pack updates."
+      "reason": "Официальная страница загрузки помечает текущий релиз Snappy Driver Installer Origin в формате vN.N.N. Не смешивать с еженедельными обновлениями драйверпаков и не показывать устаревшую зафиксированную резервную версию."
     },
     "actions": [
       {
@@ -1738,6 +1797,44 @@
     ],
     "siteCategory": "Сеть",
     "siteSummary": "TCP-проверка адреса 95.182.80.39 из разных точек."
+  },
+  {
+    "id": "check-host-tcp-ssh",
+    "name": "Check-Host — TCP 89.105.219.179:22",
+    "website": "https://check-host.net/check-tcp?host=89.105.219.179:22",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://check-host.net/check-tcp?host=89.105.219.179:22",
+      "reason": "Онлайн-проверка доступности заданного TCP-порта; версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Проверить SSH",
+        "url": "https://check-host.net/check-tcp?host=89.105.219.179:22"
+      }
+    ],
+    "siteCategory": "Сеть",
+    "siteSummary": "Проверка доступности TCP-порта 22 указанного сервера из разных стран."
+  },
+  {
+    "id": "cloudflare-speed-test",
+    "name": "Cloudflare Speed Test",
+    "website": "https://speed.cloudflare.com/ru-ru",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://speed.cloudflare.com/ru-ru",
+      "reason": "Онлайн-тест скорости; установленной версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Проверить скорость",
+        "url": "https://speed.cloudflare.com/ru-ru"
+      }
+    ],
+    "siteCategory": "Сеть",
+    "siteSummary": "Измерение скорости, задержки и качества интернет-соединения."
   },
   {
     "id": "play-speed-calc",
@@ -2744,6 +2841,10 @@
       {
         "label": "Форум",
         "url": "https://rutracker.org/forum/index.php"
+      },
+      {
+        "label": "Главная",
+        "url": "https://rutracker.org"
       }
     ],
     "siteCategory": "Каталог",
@@ -2929,5 +3030,211 @@
     ],
     "siteCategory": "Сервисы",
     "siteSummary": "Управление веб-сервисами и развертываниями Render."
+  },
+  {
+    "id": "win11debloat",
+    "name": "Win11Debloat",
+    "website": "https://github.com/Raphire/Win11Debloat/releases",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "Raphire/Win11Debloat",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^(\\d{4}\\.\\d{1,2}\\.\\d{1,2})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "2026.10.30",
+      "fallbackPublishedAt": "2026-10-31T00:00:00.000Z",
+      "fallbackPublishedAtText": "31.10.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Релизы",
+        "url": "https://github.com/Raphire/Win11Debloat/releases"
+      }
+    ],
+    "programCategory": "Система",
+    "cardSummary": "PowerShell-инструмент для настройки и удаления лишних компонентов Windows 11/10; перед применением проверяйте выбранные действия."
+  },
+  {
+    "id": "drweb-cureit",
+    "name": "Dr.Web CureIt!",
+    "website": "https://free.drweb.ru/download+cureit+free/",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://free.drweb.ru/download+cureit+free/",
+      "reason": "Новые антивирусные базы встроены в скачиваемую утилиту, надёжного единого номера версии для отслеживания нет."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://free.drweb.ru/download+cureit+free/"
+      }
+    ],
+    "programCategory": "Безопасность",
+    "cardSummary": "Разовый антивирусный сканер Windows; не заменяет защиту в реальном времени, для актуальных баз скачивайте заново."
+  },
+  {
+    "id": "microsoft-safety-scanner",
+    "name": "Microsoft Safety Scanner",
+    "website": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download",
+      "reason": "Защитные определения обновляются чаще обычных релизов; загруженный инструмент действует 10 дней, авто-версия отключена."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download"
+      }
+    ],
+    "programCategory": "Безопасность",
+    "cardSummary": "Портативный сканер вредоносного ПО Microsoft для Windows; копию нужно скачивать заново через 10 дней."
+  },
+  {
+    "id": "ratool",
+    "name": "Ratool (Removable Access Tool)",
+    "website": "https://www.majorgeeks.com/files/details/ratool_%28removable_access_tool%29.html",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://www.majorgeeks.com/files/details/ratool_%28removable_access_tool%29.html",
+      "reason": "MajorGeeks — сторонняя страница загрузки; автоматическое отслеживание релизов отключено."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://www.majorgeeks.com/files/details/ratool_%28removable_access_tool%29.html"
+      }
+    ],
+    "programCategory": "Безопасность",
+    "cardSummary": "Портативная утилита Sordum для управления доступом к USB-накопителям (зеркало загрузки MajorGeeks)."
+  },
+  {
+    "id": "comfyui-desktop",
+    "name": "ComfyUI Desktop",
+    "website": "https://comfy.org/download",
+    "versionSource": {
+      "sourceId": "manual-official",
+      "url": "https://comfy.org/download",
+      "reason": "Официальная страница предлагает разные способы установки (Desktop/Portable/CLI) с независимыми циклами обновлений; авто-версия отключена."
+    },
+    "actions": [
+      {
+        "label": "Скачать",
+        "url": "https://comfy.org/download"
+      }
+    ],
+    "programCategory": "Изображения",
+    "cardSummary": "Локальная графическая среда для генеративного ИИ и запуска ComfyUI на своём ПК."
+  },
+  {
+    "id": "omarchy",
+    "name": "Omarchy",
+    "website": "https://omarchy.org/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://omarchy.org/",
+      "reason": "Официальный сайт Linux-дистрибутива; в SoftwareHub карточка имеет формат сайта без проверки версии."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://omarchy.org/"
+      }
+    ],
+    "siteCategory": "Linux",
+    "siteSummary": "Linux-дистрибутив на базе Arch с готовой рабочей средой и настройками."
+  },
+  {
+    "id": "civitai-red",
+    "name": "Civitai RED",
+    "website": "https://civitai.red/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://civitai.red/",
+      "reason": "Онлайн-платформа моделей и изображений, в том числе с контентом для взрослых; единой версии нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть RED",
+        "url": "https://civitai.red/"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "Официальная версия Civitai с расширенным доступом к контенту, включая материалы 18+."
+  },
+  {
+    "id": "civitai",
+    "name": "Civitai",
+    "website": "https://civitai.com/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://civitai.com/",
+      "reason": "Онлайн-каталог ИИ-моделей; единой версии для сравнения нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Открыть",
+        "url": "https://civitai.com/"
+      }
+    ],
+    "siteCategory": "ИИ",
+    "siteSummary": "Каталог моделей и примеров генеративного ИИ с ограничением взрослого контента."
+  },
+  {
+    "id": "tgmtproxy",
+    "name": "MTProto Proxy — Telegram",
+    "website": "https://tgmtproxy.github.io/mtproxy/",
+    "versionSource": {
+      "sourceId": "manual-service",
+      "url": "https://tgmtproxy.github.io/mtproxy/",
+      "reason": "Сторонний веб-каталог MTProto-прокси; версии приложения нет."
+    },
+    "type": "site",
+    "actions": [
+      {
+        "label": "Список прокси",
+        "url": "https://tgmtproxy.github.io/mtproxy/"
+      }
+    ],
+    "siteCategory": "Сеть",
+    "siteSummary": "Сторонний список MTProto-прокси для Telegram с проверкой доступности; доверие к операторам не гарантируется."
+  },
+  {
+    "id": "localsend",
+    "name": "LocalSend",
+    "website": "https://localsend.org/",
+    "versionSource": {
+      "sourceId": "github-releases",
+      "repo": "localsend/localsend",
+      "releasePolicy": {
+        "selection": "highest-version",
+        "versionField": "tag_name",
+        "versionPattern": "^v?(\\d+(?:\\.\\d+){2,3})$",
+        "includePrerelease": false
+      },
+      "fallbackVersion": "1.18.2",
+      "fallbackPublishedAt": "2026-08-21T00:00:00.000Z",
+      "fallbackPublishedAtText": "21.08.2026",
+      "showReleaseDate": true
+    },
+    "actions": [
+      {
+        "label": "Сайт",
+        "url": "https://localsend.org/"
+      },
+      {
+        "label": "Релизы",
+        "url": "https://github.com/localsend/localsend/releases"
+      }
+    ],
+    "programCategory": "Файлы",
+    "cardSummary": "Передача файлов между Windows, Linux и смартфонами через локальную сеть без облака."
   }
 ]

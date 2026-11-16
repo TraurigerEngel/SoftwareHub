@@ -39,17 +39,17 @@ test('Microsoft Activation Scripts stays visible without ANY automatic version c
 
 test('ZStartup is removed from catalog and version-source lookup',()=>{
   assert.equal(byId.zstartup,undefined);
-  assert.equal(catalog.length,126);
-  assert.equal(catalog.filter(p=>p.type==='site').length,40);
-  assert.equal(catalog.filter(p=>p.type!=='site').length,86);
-  assert.equal(catalog.filter(p=>p.versionSource?.sourceId==='github-releases').length,45);
+  assert.equal(catalog.length,141);
+  assert.equal(catalog.filter(p=>p.type==='site').length,49);
+  assert.equal(catalog.filter(p=>p.type!=='site').length,92);
+  assert.equal(catalog.filter(p=>p.versionSource?.sourceId==='github-releases').length,47);
 });
 
 // Regression guard: do not re-add BetterTrumpet to the catalog or GitHub release checks.
 test('BetterTrumpet is absent from catalog and automated version checks',()=>{
   assert.equal(byId.bettertrumpet,undefined);
   assert.equal(catalog.some(p=>p.versionSource?.repo==='xammen/BetterTrumpet'),false);
-  assert.equal(catalog.length,126);
+  assert.equal(catalog.length,141);
 });
 
 test('LosslessCut has no summary; GitHub release version and source are enabled',()=>{
